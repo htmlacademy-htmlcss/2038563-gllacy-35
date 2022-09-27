@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Елена Борисова](https://up.htmlacademy.ru/htmlcss/35/user/2038563).
-* Наставник: `Роман Марченко`(https://htmlacademy.ru/profile/id505487)
+* Наставник: `Роман Марченко`(https://htmlacademy.ru/profile/id505487).
 
 ---
 
