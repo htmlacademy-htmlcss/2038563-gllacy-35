@@ -1,0 +1,13 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+
+}
+.top{
+
+}
