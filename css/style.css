@@ -1,13 +1,99 @@
+@font-face{
+    font-family: "Inter";
+    font-style: bold;
+    font-weight: 700;
+src: url("fonts/inter-700.woff2") format("woff2");
+font-display: swap;
+}
+@font-face{
+    font-family: "Inter";
+    font-style: regular;
+    font-weight: 400;
+src: url("fonts/inter-400.woff2") format("woff2");
+font-display: swap;
+}
+@font-face{
+    font-family: "Inter";
+    font-weight: 900;
+    font-style: normal;
+src: url("fonts/inter-900.woff2") format("woff2");
+font-display: swap;
+}
+body{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+    background-color: #FEAFC3;
+}
 .header{
+    color:#2D3440;
+    background: #FEAFC3;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+
     display: flex;
     justify-content: space-between;
 }
+.menu-link{
+    font-family:  Inter, sans-serif;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #2D3440;
+    text-decoration: none;
+    color: inherit;
+}
+.gifts-title{
+    text-align: center;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
 
-.footer__content{
-    display: flex;
-    justify-content: space-between;
+.gifts-paspberry,
+.gifts-marshmallow{
+background-color: #FF7799;
+color: #000;
+  }
+
+h3{
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+  }
+h4{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+  }
+.info{
+    background-image: url(../images/background/Slice-wafer.png);
+}
+
+.subscription__serving{
+background-image: url("../images/background/bgr-subsription-serving.jpg");
+background-repeat: no-repeat;
+}
+.subscription__to-mailing{
+    background-image: url("../images/background/Slice-mail.png");
+}
+  .delivery {
+    background-image: url("../images/background/bgr-delivery.jpg");
+    background-repeat: no-repeat;
 
 }
-.top{
-
+.contacts__inner{
+    background-image: url("../images/background/bgr-contacts.jpg");
+    background-repeat: no-repeat;
+}
+.top__slider-title{
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 900;
 }
