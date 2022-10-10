@@ -37,6 +37,17 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.top__slider-btn,
+.gifts-btn{
+    text-align: center;
+    background-color: #FCFCFC;
+    border: 4px solid rgba(252, 252, 252, 0.4);
+    border-radius: 26px;
+    padding: 12px 32px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
 .menu-link{
     font-family:  Inter, sans-serif;
     line-height: 20px;
@@ -46,6 +57,11 @@ body{
     color: #2D3440;
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+}
+.phone{
+    color: inherit;
+    text-decoration: none;
 }
 .gifts-title{
     text-align: center;
@@ -65,12 +81,11 @@ h3{
     font-size: 32px;
     line-height: 46px;
     text-align: center;
-  }
+}
 h4{
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-
   }
 .info{
     background-image: url(../images/background/Slice-wafer.png);
@@ -80,8 +95,25 @@ h4{
 background-image: url("../images/background/bgr-subsription-serving.jpg");
 background-repeat: no-repeat;
 }
+.subscription__serving-link{
+font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+text-decoration: none;
+color: inherit;
+}
 .subscription__to-mailing{
     background-image: url("../images/background/Slice-mail.png");
+}
+.button{
+    text-align: center;
+    background-color: #FF2F64;
+    color: #fff;
+    border: 4px solid rgba(255, 47, 100, 0.3);
+    border-radius: 26px;
+    padding: 12px 32px;
+    font-weight: 700;
+    font-size: 16px;
 }
   .delivery {
     background-image: url("../images/background/bgr-delivery.jpg");
@@ -96,4 +128,33 @@ background-repeat: no-repeat;
     font-size: 36px;
     line-height: 46px;
     font-weight: 900;
+}
+.contacts{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+.button-feedback{
+text-decoration: none;
+}
+.footer{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+}
+.contacts__phone{
+    color:inherit;
+}
+.footer__menu a{
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+.academy-link{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: inherit;
 }
