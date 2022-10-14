@@ -259,6 +259,7 @@ border-radius: 16px;
 
 }
 .contacts__adress{
+box-sizing: border-box;
 width: 343px;
 background-color: #FCFCFC;
 margin-right: 700px;
@@ -281,6 +282,8 @@ text-decoration: none;
 .footer{
     display: flex;
     justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
     padding: 57px 0 48px;
     font-weight: 400;
     font-size: 14px;
@@ -301,4 +304,7 @@ text-decoration: none;
     font-size: 12px;
     line-height: 16px;
     color: inherit;
+}
+.breadcrumbs{
+    
 }
