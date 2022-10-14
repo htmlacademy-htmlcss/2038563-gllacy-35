@@ -16,7 +16,7 @@
         <div class="header__info">
             <img class="logo" src="images/logo-shop.svg" width="137" height="56" alt="логотип магазина">
             <nav class="navigation">
-                <ul class="menu">
+                <ul class="menu-list">
                     <li class="menu-item"><a class="menu-link"href="catalog.html">Каталог</a></li>
                     <li class="menu-item"><a class="menu-link"href="#">Доставка и оплата</a></li>
                     <li class="menu-item"><a class="menu-link" href="#index.html">О компании</a></li>
@@ -25,16 +25,17 @@
         </div>
 
         <div class="header__contacts">
-            <a href="tel:+78005558628" class="phone"><b>+7 800 555-86-28</b></a>
-            <ul class="menu">
+            <a  class="phone" href="tel:+78005558628"><b>+7 800 555-86-28</b></a>
+            <ul class="menu-search">
                 <li class="menu-item"><a href="#" class="menu-link">
-                        <span class="visually-hidden">Поиск</span></a></li>
+                        <p class="visually-hidden">Поиск</p></a></li>
                 <li class="menu-item"><a href="#" class="menu-link">Вход</a></li>
 
                 <li class="menu-item"><a href="#" class="menu-link">
-                        <span class="visually-hidden">Поиск</span>
+                        <p class="visually-hidden">Корзина</p>
                     </a></li>
                 </ul>
+
         </div>
 
     </header>
@@ -42,6 +43,7 @@
     <h1 class="visually-hidden">Glacy-shop Ice Cream</h1>
 
     <main class="main">
+        <div class="main__container">
         <section class="top">
                 <div class="top__slider">
 
@@ -121,6 +123,8 @@
 
     <section class="gifts">
         <h3 class="gifts-title">Заказывайте мороженое и получайте подарки!</h3>
+        <div class="gifts__container">
+
         <ul class="gifts-paspberry">
             <li><h4>Малинка даром!</h4>
             <p class="gifts-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового
@@ -130,12 +134,13 @@
             </li>
 
             <li><h4>Маршмеллоу даром!</h4>
-            <p class="gifts-text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежныхзефирок совершенно
+            <p class="gifts-text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно
                 бесплатно.</p>
             <button class="gifts-btn">Хочу подарок</button>
             <img src="images/marshmellow.png" width="219" height="268" alt="маршмеллоу фото">
             </li>
         </ul>
+    </div>
     </section>
 
 
@@ -173,8 +178,10 @@
     </section>
 
     <section class="info">
+        <div class="info-container">
         <h3 class="info__title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
         <ul class="info__list">
+
             <li class="info__text"><img src="images/info-logo/info-ice-cream.svg" class="info-logo" alt="собственное производство">
                 <p>Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
             </li>
@@ -188,9 +195,11 @@
                 </p>Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
             </li>
         </ul>
+        </div>
     </section>
 
     <section class="subscription">
+
 
             <div class="subscription__serving">
             <p>Новое в нашем блоге</p>
@@ -214,9 +223,11 @@
 
     <section class="delivery">
 
+
+        <div class="delivery__text">
         <h3 class="delivery-title">Доставка любимого мороженого на дом</h3>
         <p>Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-
+</div>
 
           <form  class="feedback-form" action="http://echo.htmlacademy.ru/" method="post">
              <label for="date">Дата</label>
@@ -238,18 +249,18 @@
     <section class="contacts">
 
             <div class="contacts__adress">
-                <h5> class="contacts__subtitle">Адрес главного офиса и офлайн-магазина:</h5>
+                <h5 class="contacts__subtitle">Адрес главного офиса и офлайн-магазина:</h5>
                 <p>наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
                 <p>Для заказов по телефону:</p>
                 <a  class="contacts__phone" href="tel:+78128121212"><b>+7 (812) 812-12-12</b></a>
                 <p class="contacts__subtitle">(с 10 до 20 ежедневно)</p>
                 <form action="http://echo.htmlacademy.ru/" class="feedback-form" method="post">
-
                 <a class="button button-feedback" href="#">Форма обратной связи</a>
             </div>
 
     </section>
 
+</div>
 </main>
 
 
@@ -288,7 +299,7 @@
 
 
 
-            
+
 
 
 
