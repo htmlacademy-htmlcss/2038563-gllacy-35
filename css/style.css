@@ -160,11 +160,11 @@ list-style: none;
 .gifts-list{
     display: flex;
         justify-content: space-between;
-        padding: 0;
+        padding: 15;
         margin: 0;
 }
 .gifts-list-item{
-    display: flex;
+    display:flex;
 flex-direction: column;
 justify-content: space-between;
     border-radius: 16px;
@@ -176,6 +176,8 @@ padding: 16px;
  .gifts-list-item+ .gifts-list-item{
     padding-left: 30px;
  }
+/*----------bestsellers------------------------------------------*/
+
 
 .bestsellers__title{
     display: block;
@@ -192,11 +194,36 @@ padding: 16px;
     margin: 0;
     padding: 0;
     text-align: center;
+    width: 270px;   
+}
+.bestsellers-list-item{
+display: flex;
+flex-direction: column;
+
+background-color: #FCFCFC;
+border-radius: 16px;
+padding: 0 40px 24px;
+}
+.bestsellers__list h4{
+
+}
+.bestsellers_info{
+    width: 190px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
 }
 
 .busket{
     border-radius: 60px;
 }
+
+
+
+/*-----------------вафельная рамка------------------*/
+
+
 .info-container{
     box-sizing: border-box;
     margin: 56px 40px;
