@@ -147,15 +147,9 @@ list-style: none;
 }
 
 
-.gifts-list{
-display: flex;
-    justify-content: space-between;
-    text-align: center;
-    padding: 0;
-    margin: 0;
+
    
-  
-}
+
 .gifts-title{
     display: block;
     margin: 0 auto;
@@ -163,18 +157,24 @@ display: flex;
     margin-top: 80px;
     margin-bottom: 55px;
 }
-
-.gifts-list li{
+.gifts-list{
+    display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+}
+.gifts-list-item{
     display: flex;
 flex-direction: column;
-
-   width: 570px;
+justify-content: space-between;
     border-radius: 16px;
 background-color: #FF7799;
 color: #000;
 list-style: none;
 padding: 16px;
-
+ }
+ .gifts-list-item+ .gifts-list-item{
+    padding-left: 30px;
  }
 
 .bestsellers__title{
