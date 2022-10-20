@@ -280,6 +280,11 @@ width: 270px;
     margin: 80px 0;
 
 }
+.subscription__serving p{
+  font-weight: 400;
+  font-size: 16px; 
+  line-height: 20px; 
+}
 .subscription__serving{
 background-image: url("../images/background/bgr-subsription-serving.jpg");
 background-repeat: no-repeat;
@@ -287,7 +292,11 @@ width: 570px;
 border-radius: 16px;
 padding: 32px 235px 67px 32px;
 }
-
+.subscription__serving p{
+font-weight: 400;
+font-size: 16px; 
+line-height: 20px; 
+}
 .subscription__serving-link{
 min-width: 303px;
 font-weight: 700;
@@ -303,7 +312,7 @@ color: inherit;
     background-image: url("../images/background/slice-mail.png");
 border-radius: 16px;
 }
-.subscription__btn{
+.button{
     text-align: center;
     background-color: #FF2F64;
     color: #fff;
@@ -312,6 +321,10 @@ border-radius: 16px;
     padding: 12px 32px;
     font-weight: 700;
     font-size: 16px;
+}
+
+.subscription__btn{
+   
     margin-top: 42px;
 }
 /*-----------------доставка--------------------*/
@@ -322,18 +335,39 @@ border-radius: 16px;
     background-image: url("../images/background/bgr-delivery.jpg");
     background-repeat: no-repeat;
     border-radius: 16px;
-    margin-bottom: 80px;
-    padding: 64px;
+    margin-top: 80px;
+    
+   
 
 }
-.delivery__text{
+.delivery__inner{
     width: 371px;
-    margin: 103px 100px 163px 100px;
+    margin-left: 100px;
+    margin-bottom: 163px;
 }
+.delivery-title{
+    text-align:right;
+margin-top: 165px;
+}
+.delivery p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
 .feedback-form{
-    box-sizing: border-box;
+
    width: 500px;
+
    background-color: #FCFCFC;
+   border-radius: 16px;
+   margin: 64px;
+   padding: 40px 40px 42px;
+}
+
+.delivery-btn{
+
+    margin-top: 42px; 
 }
 
 /*--------------------контакты-----------------------*/
@@ -341,7 +375,7 @@ border-radius: 16px;
 
 .contacts{
 
- margin: 0;
+ margin-top: 80px;
 padding: 64px;
 background-image: url("../images/background/bgr-contacts.jpg");
 background-repeat: no-repeat;
@@ -349,11 +383,11 @@ border-radius: 16px;
 
 }
 .contacts__adress{
-box-sizing: border-box;
+
 width: 343px;
 background-color: #FCFCFC;
-margin-right: 700px;
-padding: 0;
+border-radius: 16px;
+padding: 40px;
 font-weight: 400;
 font-size: 16px;
 line-height: 22px;
@@ -366,7 +400,8 @@ line-height: 22px;
     font-weight: 900;
 }
 
-.button-feedback{
+.feedback-btn{
+    margin: 0;
 text-decoration: none;
 }
 .contacts__phone{
