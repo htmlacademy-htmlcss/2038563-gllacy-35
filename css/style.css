@@ -19,24 +19,96 @@ font-display: swap;
 src: url("fonts/inter-900.woff2") format("woff2");
 font-display: swap;
 }
+html{
+  height: 100%;
+}
+
 body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Inter", sans-serif;
     font-size: 18px;
     line-height: 24px;
-    color: black;
+    color: #2D3440;;
     background-color: #FEAFC3;
 }
+.main__container{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+    }
+    .main__container h3{
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 46px;
+        text-align: center;
+    }
+    .main__container h4{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    }
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow:hidden;
+}
+/*-----------------------header---------------------------*/
+
+
 .header{
-    color:#2D3440;
-    background: #FEAFC3;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-
-
     display: flex;
     justify-content: space-between;
+   
+    
 }
+.header__info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 575px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    min-width: 115px;
+    min-height: 32px;
+   
+
+}
+.menu-search{
+    display: flex;
+   justify-content: flex-end;
+   flex-wrap: wrap;
+   min-width: 431px;
+   margin: 36px 0;
+   list-style: none;
+}
+.menu-item{
+    padding: 8px 16px;
+}
+.phone{ 
+  font-weight: 700;
+  font-size: 16px;  
+  line-height: 20px;
+}
+
+
+
+
+    /*-------------------------------------слайдер----------------------------*/
 .top__slider-btn,
 .gifts-btn{
     text-align: center;
@@ -49,7 +121,7 @@ body{
 }
 
 .menu-link{
-    font-family:  Inter, sans-serif;
+    font-family: Inter, sans-serif;
     line-height: 20px;
     font-size: 16px;
     font-weight: 400;
@@ -58,52 +130,187 @@ body{
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+
 }
 .phone{
-    color: inherit;
+    margin: 42px auto;
+    color:inherit;
     text-decoration: none;
 }
+.social-links{
+    display: flex;
+    justify-content:space-between;
+    width: 104px;
+    list-style: none;
+}
+
+
+/*----------------малинка даром----------------------------------*/
+   
+
 .gifts-title{
-    text-align: center;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 46px;
+    
+    margin: 0 auto;
+    width: 434px;
+    margin-top: 80px;
+    margin-bottom: 55px;
 }
-
-.gifts-paspberry,
-.gifts-marshmallow{
+.gifts-list{
+    display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+}
+.gifts-list-item{
+width: 570px;
+border-radius: 16px;
 background-color: #FF7799;
-color: #000;
-  }
+list-style: none;
 
-h3{
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 46px;
+}
+.gifts-list h4,
+.gifts-text{
+    margin-left: 36px;
+    max-width: 328px;
+}
+.gifts-btn{
+   margin: 36px;
+}
+
+/*??????????????????????????Роман, как правильно  впихнуть картинки в эти розовые поля в правильном положении...??????*/
+
+
+/*----------bestsellers------------------------------------------*/
+
+
+.bestsellers__title{
+    display: block;
+    margin: 0 auto;
+    width: 526px;
+    margin-top: 80px;
+    margin-bottom: 112px; 
+}
+
+.bestsellers__list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    
 }
-h4{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-  }
-.info{
-    background-image: url(../images/background/Slice-wafer.png);
+.bestsellers__list-item{
+background-color: #FCFCFC;
+border-radius: 8px;
+width: 270px;  
+
+}
+.bestsellers__list-item img{
+    border-radius: 50%;
+    margin-top: -56px;
+}
+.bestsellers__list h4{
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+.bestsellers__info{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+   margin: 0 40px 16px;
 }
 
+.bestsellers__price{
+  margin: 20px 75px 28px 40px;
+}
+
+.busket{
+    border-radius: 60px;
+  margin: 16px 20px 24px 0;
+}
+/*Роман тут два последних price и busket не  встают на  одну  строчку если я задаю марджины из макета(((*.
+
+
+
+/*-----------------вафельная рамка------------------*/
+
+
+.info__list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 1122px;
+    margin-top: 80px;
+    padding: 56px 40px;
+    border-radius: 16px;
+
+/*пока не поняла как ее делать РАМКУ ВАФельную*/
+    border: 24px solid #fff;
+    -moz-border-image: url("../images/background/slice-wafer.png"); 30 repeat repeat ;
+    -webkit-border-image: url("../images/background/slice-wafer.png"); 30 repeat repeat; 
+    -o-border-image: url("../images/background/slice-wafer.png"); 30 repeat repeat;
+    border-image: url("../images/background/slice-wafer.png"); 30 repeat repeat;
+   
+
+}
+.info__title{
+    text-align: center;
+    margin-bottom: 56px;
+
+
+}
+.info__text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 505px;
+}
+
+.info-logo{
+    padding-right:16px;
+}
+/*-------------10 способов  подписки--------------------------*/
+
+.subscription{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+
+}
+.subscription__serving p{
+  font-weight: 400;
+  font-size: 16px; 
+  line-height: 20px; 
+}
 .subscription__serving{
 background-image: url("../images/background/bgr-subsription-serving.jpg");
 background-repeat: no-repeat;
+width: 570px;
+border-radius: 16px;
+padding: 32px 235px 67px 32px;
+}
+.subscription__serving p{
+font-weight: 400;
+font-size: 16px; 
+line-height: 20px; 
 }
 .subscription__serving-link{
+min-width: 303px;
 font-weight: 700;
 font-size: 24px;
 line-height: 30px;
 text-decoration: none;
 color: inherit;
+
 }
 .subscription__to-mailing{
-    background-image: url("../images/background/Slice-mail.png");
+    width: 570px;
+    padding: 26px;
+    background-image: url("../images/background/slice-mail.png");
+border-radius: 16px;
 }
 .button{
     text-align: center;
@@ -115,46 +322,252 @@ color: inherit;
     font-weight: 700;
     font-size: 16px;
 }
+
+.subscription__btn{
+   
+    margin-top: 42px;
+}
+/*-----------------доставка--------------------*/
+
   .delivery {
+      display: flex;
+      justify-content: space-between;
     background-image: url("../images/background/bgr-delivery.jpg");
     background-repeat: no-repeat;
+    border-radius: 16px;
+    margin-top: 80px;
+    padding: 64px;
+    
+   
 
 }
-.contacts__inner{
-    background-image: url("../images/background/bgr-contacts.jpg");
-    background-repeat: no-repeat;
+.delivery__inner{
+    width: 371px;
 }
-.top__slider-title{
-    font-size: 36px;
-    line-height: 46px;
-    font-weight: 900;
+
+.delivery-title{
+    margin-top: 100px;
+    margin-left: 36px;
 }
-.contacts{
+.delivery__inner p{
+    margin-left: 36px;
+} 
+.delivery p{
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
 }
-.button-feedback{
-text-decoration: none;
+
+.delivery-form{
+display: grid;
+grid-template-columns: 117px 287px;
+gap: 16px;
+
+
+   width: 500px;
+   background-color: #FCFCFC;
+   border-radius: 16px;
+   padding: 40px 40px 42px;
 }
-.footer{
-    font-weight: 400;
-    font-size: 14px;
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin: 0;
+}
+.form label{
+    font-weight: 700;
+    font-size: 16px;
     line-height: 20px;
-    color: #000;
+}
+.info-form{
+   grid-column: 1/-1;
+   justify-self: start;
+}
+
+.delivery__adress{
+   grid-column: 1/-1; 
+}
+.delivery__adress label,
+.delivery__adress input{
+display: block;
+
+}
+.delivery-btn{
+grid-column: 1/-1;
+justify-self: center;
+padding: 12px 32px;
+font-weight: 700;
+font-size: 16px;
+}
+
+/*--------------------контакты-----------------------*/
+
+
+.contacts{
+
+ margin-top: 80px;
+padding: 64px;
+background-image: url("../images/background/bgr-contacts.jpg");
+background-repeat: no-repeat;
+border-radius: 16px;
+
+}
+.contacts__adress{
+width: 343px;
+background-color: #FCFCFC;
+border-radius: 16px;
+padding: 40px;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+}
+.contacts__adress p{
+margin-top: 0;
+}
+.contacts__title{
+  font-weight: 700; 
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 12px;
+  margin-bottom: 24px;
 }
 .contacts__phone{
     color:inherit;
+    margin-top: 12px;
 }
-.footer__menu a{
+.contacts__subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 0;
+}
+.feedback-btn{  
+text-decoration: none;
+margin-top: 32px;
+/*---почему кнопка прилипла к надписям?? если я ей указала  отступ*/
+}
+
+
+
+/*---------------------------------footer------------------*/
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 57px 0 48px;
+}
+.social-links{
+    display: flex;
+    justify-content:space-between;
+    width: 104px;
+    padding: 0;
+    margin: 0;
+    list-style: none;}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-between;       
+    width: 356px; 
+   margin: 48px 407px 57px;
+}
+.footer-link{  
+font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  text-decoration: none;
-  color: inherit;
+  list-style: none;
+
+}
+.footer-link a{
+text-decoration: none;
+} 
+
+.footer__copyright{
+    display: flex;
+    flex-direction: column;
+}
+.academy-logo{
+    width: 93px;
+    
 }
 .academy-link{
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
     color: inherit;
+    padding: 15px 15px 0 0 ;
+}
+
+/*-------------!!!Catalog---------------------------------------------------------------------------------*/
+
+
+
+.breadcrumbs{
+    display: flex;
+flex-direction: row;
+    justify-content:flex-start; 
+    list-style: none;
+}
+.breadcrumbs-item{
+    padding: 0 28px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+.breadcrumbs a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.catalog{
+    display: flex;
+   justify-content: sb;
+   width: 1170px;
+    margin 0;
+    padding: 0;
+}
+.catalog-title{
+     font-weight: 900;
+     font-size: 32px;
+     line-height: 46px;
+     margin-bottom: 40px;
+}
+.catalog__filter{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 44px;
+}
+.cards__list{
+   display: grid;
+   grid-template-columns: repeat(4, 270px);
+gap: 30px;
+
+   list-style-type: none;
+   margin: 24px 0 16px;
+   padding: 0;
+}
+
+.cards__list-item{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+background-color: #FCFCFC;
+border-radius: 8px;
+    width: 270px;
+
+}
+.cards__list-item-content{
+
+    padding: 0 37px 24px 43px;
+    flex-grow: 1;
+}
+.cards__price{
+    text-align: center;
+   
+}
+.busket{
+    margin: 0;
+    padding: 0;
 }

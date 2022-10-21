@@ -5,41 +5,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="widt, initial-scale=1.0">
   <title>Catalog</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="header">
-  <div class="header__info">
-    <img class="logo" src="images/logo-shop.svg" alt="логотип магазина">
-    <nav class="navigation">
-      <ul class="menu">
-        <li class="menu-item"><a href="#" class="menu_link">Каталог</a></li>
-        <li class="menu-item"><a href="#" class="menu_link">Доставка и оплата</a></li>
-        <li class="menu-item"><a href="#" class="menu_link">О компании</a></li>
-      </ul>
-    </nav>
-  </div>
 
-  <div class="header__contacts">
-    <a href="tel:+78005558628" class="phone">+7 800 555-86-28</a>
-    <ul class="menu">
-      <li class="menu-item"><a href="#" class="menu_link">
-        <span class="visually-hidden">Поиск</span></a></li>
-      <li class="menu-item"><a href="#" class="menu_link">Вход</a></li>
 
-      <li class="menu-item"><a href="#" class="menu_link">
-        <span class="visually-hidden">Поиск</span>
-      </a></li>
-    </ul>
-    </nav>
-  </div>
+  <div class="main__container">
+  <header class="header">
+    <div class="header__info">
+        <img class="logo" src="images/logo-shop.svg" width="137" height="56" alt="логотип магазина">
+        <nav class="navigation">
+            <ul class="menu-list">
+                <li class="menu-item"><a class="menu-link"href="catalog.html">Каталог</a></li>
+                <li class="menu-item"><a class="menu-link"href="#">Доставка и оплата</a></li>
+                <li class="menu-item"><a class="menu-link" href="#index.html">О компании</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="header__contacts">
+        <a  class="phone" href="tel:+78005558628"><b>+7 800 555-86-28</b></a>
+        <ul class="menu-search">
+            <li class="menu-item"><a href="#" class="menu-link">
+                    <p class="visually-hidden">Поиск</p></a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Вход</a></li>
+
+            <li class="menu-item"><a href="#" class="menu-link">
+                    <p class="visually-hidden">Корзина</p>
+                </a></li>
+            </ul>
+
+    </div>
 
 </header>
 
 
 
 <main class="main">
-  <h1 class="visually-hidden">Glacy-shop Ice Cream</h1>
+  <h1 class="visually-hidden">Глейси - магазин мороженого</h1>
+
+
+
 
   <div class="main__inner">
     <ul class="breadcrumbs">
@@ -125,77 +132,76 @@
 
 <section class="cards-product">
   <div class="card-product">
-    <nav class="cards__nav">
+  
       <ul class="cards__list">
-      <li class="cardsrs__list-item"><img src="images/content/bestseller1.jpg" width="168" height="168" alt="Вкус Малина">
-          <h4>Малинка</h4>
-          <span class="cards__info">Сливочное мороженое с малиновым джемом</span>
+      <li class="cards__list-item"><img src="images/content/bestseller1.jpg" width="168" height="168" alt="Вкус Малина">
+          <div class="cards__list-item-content"><h4>Малинка</h4>
+          <p class="cards__info">Сливочное мороженое с малиновым джемом</p>
           <b class="cards__price">310 ₽/кг</b>
-              <button class="busket"><img src="images/busket-logo.svg" width="32" height="32" alt="Перейти в корзину" class="busket-logo"></button>
+              <button class="busket"><img src="images/busket-logo.svg" width="32" height="32" alt="Перейти в корзину" class="busket-logo"></button></div>
       </li>
       <li class="cards__list-item"><img src="images/content/bestseller2.jpg" width="168" height="168" alt="Вкус фисташка">
           <h4>Фисташка</h4>
-          <span class="cardss__info">Фисташковый пломбир с кусочками шоколада</span>
+          <p class="cards__info">Фисташковый пломбир с кусочками шоколада</p>
           <b class="cards__price">340 ₽/кг</b>
           <button class="busket"><img src="images/busket-logo.svg" width="32" height="32" alt="Перейти в корзину" class="busket-logo"></button>
       </li>
       <li class="cards__list-item"><img src="images/content/bestseller3.jpg" width="168" height="168" alt="Вкус черника">
           <h4>Черника</h4>
-          <span class="cards__info">Крем-брюле с черничным джемом</span>
+          <p class="cards__info">Крем-брюле с черничным джемом</p>
           <b class="cards__price">330 ₽/кг</b>
           <button class="busket"><img src="images/busket-logo.svg" width="32" height="32" alt="Перейти в корзину" class="busket-logo"></button>
       </li>
       <li class="cards__list-item"><img src="images/content/bestseller4.jpg" width="168" height="168" alt="Вкус Жвачки">
           <h4>Бабл_гам</h4>
-          <span class="cards__info">Ванильный пломбир со сладкой посыпкой</span>
+          <p class="cards__info">Ванильный пломбир со сладкой посыпкой</p>
           <b class="cards__price">320 ₽/кг</b>
           <button class="busket"><img src="images/busket-logo.svg" width="32" height="32" alt="Перейти в корзину" class="busket-logo"></button>
       </li>
       <li class="cards__list-item"><img src="images/content/bestseller5.jpg" width="168" height="168" alt="Вкус пломбир с ежевичным джемом">
         <h4>Ежевика</h4>
-        <span class="cards__info">Сливочное мороженое с ежевичным джемом</span>
+        <p class="cards__info">Сливочное мороженое с ежевичным джемом</p>
         <b class="cards__price">330 ₽/кг</b>
         <button class="busket"><img src="images/busket-logo.svg" width="32" height="32" alt="Перейти в корзину" class="busket-logo"></button>
       </li>
       <li class="cards__list-item"><img src="images/content/bestseller6.jpg" width="168" height="168" alt="Вкус пломбир банановый">
         <h4>Банан</h4>
-        <span class="cards__info">Сливочный пломбир с банановым вкусом</span>
+        <p class="cards__info">Сливочный пломбир с банановым вкусом</p>
         <b class="cards__price">340 ₽/кг</b>
         <button class="busket"><img src="images/busket-logo.svg" width="32" height="32" alt="Перейти в корзину" class="busket-logo"></button></li>
       <li class="cards__list-item"><img src="images/content/bestseller7.jpg" width="168" height="168" alt="Вкус пломбир шоколадный">
         <h4>Шоколадка</h4>
-        <span class="cards__info">Классический шоколадный пломбир</span>
+        <p class="cards__info">Классический шоколадный пломбир</p>
         <b class="cards__price">270 ₽/кг</b>
         <button class="busket"><img src="images/busket-logo.svg" width="32" height="32" alt="Перейти в корзину" class="busket-logo"></button>
 
       </li>
       <li class="cards__list-item"><img src="images/content/bestseller8.jpg" width="168" height="168" alt="Вкус пломбир клубничный">
         <h4>Клубничка</h4>
-        <span class="cards__info">Сливочный пломбир с клубничным вкусом</span>
+        <p class="cards__info">Сливочный пломбир с клубничным вкусом</p>
         <b class="cards__price">300 ₽/кг</b>
         <button class="busket"><img src="images/busket-logo.svg" width="32" height="32" alt="Перейти в корзину" class="busket-logo"></button></li>
       <li class="cards__list-item"><img src="images/content/bestseller9.jpg" width="168" height="168" alt="Вкус лимонный сорбет">
         <h4>Лимон</h4>
-        <span class="cards__info">Освежающий лимонный сорбет</span>
+        <p class="cards__info">Освежающий лимонный сорбет</p>
         <b class="cards__price">310 ₽/кг</b>
         <button class="busket"><img src="images/busket-logo.svg" width="32" height="32" alt="Перейти в корзину" class="busket-logo"></button></li>
       <li class="cards__list-item"><img src="images/content/bestseller10.jpg" alt="Вкус пломбир с ментолом">
         <h4>Ментол</h4>
-        <span class="cards__info">Сливочный пломбир с ментоловым сиропом</span>
+        <p class="cards__info">Сливочный пломбир с ментоловым сиропом</p>
         <b class="cards__price">320 ₽/кг</b>
         <button class="busket"><img src="images/busket-logo.svg" width="32" height="32" alt="Перейти в корзину" class="busket-logo"></button></li>
       <li class="cards__list-item"><img src="images/content/bestseller11.jpg" width="168" height="168" alt="Вкус фисташковый пломбир с шоколадом">
         <h4>Орешек</h4>
-        <span class="cards__info">Фисташковый пломбир с шоколадным сиропом</span>
+        <p class="cards__info">Фисташковый пломбир с шоколадным сиропом</p>
         <b class="cards__price">360 ₽/кг</b>
         <button class="busket"><img src="images/busket-logo.svg" width="32" height="32" alt="Перейти в корзину" class="busket-logo"></button></li>
       <li class="cards__list-item"><img src="images/content/bestseller12.jpg" width="168" height="168" alt="Вкус крем-брюле">
         <h4>Крем-брюле</h4>
-        <span class="cards__info">Классическое крем-брюле </span>
+        <p class="cards__info">Классическое крем-брюле </p>
         <b class="cards__price">280 ₽/кг</b>
         <button class="busket"><img src="images/busket-logo.svg" width="32" height="32" alt="Перейти в корзину" class="busket-logo"></button></li>
   </ul>
-  </nav>
   </div>
 <a href="#" class="catalog__cards-button">Показать еще</a>
 </section>
@@ -240,7 +246,7 @@
 
   </div>
 </footer>
-
+</div>
 
 </body>
 </html>
