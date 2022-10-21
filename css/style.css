@@ -202,7 +202,7 @@ list-style: none;
 }
 .bestsellers__list-item{
 background-color: #FCFCFC;
-border-radius: 16px;
+border-radius: 8px;
 width: 270px;  
 
 }
@@ -336,38 +336,69 @@ border-radius: 16px;
     background-repeat: no-repeat;
     border-radius: 16px;
     margin-top: 80px;
+    padding: 64px;
     
    
 
 }
 .delivery__inner{
     width: 371px;
-    margin-left: 100px;
-    margin-bottom: 163px;
 }
+
 .delivery-title{
-    text-align:right;
-margin-top: 165px;
+    margin-top: 100px;
+    margin-left: 36px;
 }
+.delivery__inner p{
+    margin-left: 36px;
+} 
 .delivery p{
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
 }
 
-.feedback-form{
+.delivery-form{
+display: grid;
+grid-template-columns: 117px 287px;
+gap: 16px;
+
 
    width: 500px;
-
    background-color: #FCFCFC;
    border-radius: 16px;
-   margin: 64px;
    padding: 40px 40px 42px;
 }
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin: 0;
+}
+.form label{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+.info-form{
+   grid-column: 1/-1;
+   justify-self: start;
+}
 
+.delivery__adress{
+   grid-column: 1/-1; 
+}
+.delivery__adress label,
+.delivery__adress input{
+display: block;
+
+}
 .delivery-btn{
-
-    margin-top: 42px; 
+grid-column: 1/-1;
+justify-self: center;
+padding: 12px 32px;
+font-weight: 700;
+font-size: 16px;
 }
 
 /*--------------------контакты-----------------------*/
@@ -383,7 +414,6 @@ border-radius: 16px;
 
 }
 .contacts__adress{
-
 width: 343px;
 background-color: #FCFCFC;
 border-radius: 16px;
@@ -391,22 +421,34 @@ padding: 40px;
 font-weight: 400;
 font-size: 16px;
 line-height: 22px;
-
-
 }
-.top__slider-title{
-    font-size: 36px;
-    line-height: 46px;
-    font-weight: 900;
+.contacts__adress p{
+margin-top: 0;
 }
-
-.feedback-btn{
-    margin: 0;
-text-decoration: none;
+.contacts__title{
+  font-weight: 700; 
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 12px;
+  margin-bottom: 24px;
 }
 .contacts__phone{
     color:inherit;
+    margin-top: 12px;
 }
+.contacts__subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 0;
+}
+.feedback-btn{  
+text-decoration: none;
+margin-top: 32px;
+/*---почему кнопка прилипла к надписям?? если я ей указала  отступ*/
+}
+
+
 
 /*---------------------------------footer------------------*/
 .footer{
@@ -459,17 +501,12 @@ text-decoration: none;
 
 /*-------------!!!Catalog---------------------------------------------------------------------------------*/
 
-.breadcrumbs{
-    display: flex;
-    justify-content: start;
-    margin: 92px 780px 16px 0;
 
-}
+
 .breadcrumbs{
     display: flex;
 flex-direction: row;
-    justify-content:flex-start;
-    width: 1170px;
+    justify-content:flex-start; 
     list-style: none;
 }
 .breadcrumbs-item{
@@ -502,15 +539,35 @@ flex-direction: row;
     margin-bottom: 44px;
 }
 .cards__list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-   list-style: none;
+   display: grid;
+   grid-template-columns: repeat(4, 270px);
+gap: 30px;
+
+   list-style-type: none;
+   margin: 24px 0 16px;
+   padding: 0;
 }
 
 .cards__list-item{
-    display: flexbox;
+display: flex;
+flex-direction: column;
+align-items: center;
 
+background-color: #FCFCFC;
+border-radius: 8px;
     width: 270px;
-}
 
+}
+.cards__list-item-content{
+
+    padding: 0 37px 24px 43px;
+    flex-grow: 1;
+}
+.cards__price{
+    text-align: center;
+   
+}
+.busket{
+    margin: 0;
+    padding: 0;
+}

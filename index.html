@@ -224,16 +224,19 @@
         <p>Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
 </div>
 
-          <form  class="feedback-form" action="http://echo.htmlacademy.ru/" method="post">
-            <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-             <label for="date">Дата</label>
+          <form  class="delivery-form" action="http://echo.htmlacademy.ru/" method="post">
+            <p class="info-form">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+
+             <p class="form delivery__date"><label for="date">Дата</label>
               <input id="date" type="text" name="date" placeholder="01.04.2020">
+              </p>
 
-              <label for="phone">Телефон</label>
+              <p class="form delivery__phone"><label for="phone">Телефон</label>
                  <input id="phone" type="text" name="phone" placeholder="+7 800 999-00-00">
-
-                 <label for="adress">Адрес</label>
+              </p>
+                 <p class="form delivery__adress"><label for="adress">Адрес</label>
                      <input id="adress" type="text" name="adress" placeholder="ул. Большая Конюшенная, 19/8">
+                     </p>
 
                      <button class="button delivery-btn" type="submit">Отправить</button>
           </form>
@@ -245,8 +248,8 @@
     <section class="contacts">
 
             <div class="contacts__adress">
-                <h5 class="contacts__subtitle">Адрес главного офиса и офлайн-магазина:</h5>
-                <p>наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+                <p>Адрес главного офиса и офлайн-магазина:</p>
+                <h5 class="contacts__title">наб. реки Карповки, 5 лит П, Санкт-Петербург</h5>
                 <p>Для заказов по телефону:</p>
                 <a  class="contacts__phone" href="tel:+78128121212"><b>+7 (812) 812-12-12</b></a>
                 <p class="contacts__subtitle">(с 10 до 20 ежедневно)</p>
