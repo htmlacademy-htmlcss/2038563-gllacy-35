@@ -138,17 +138,17 @@
             <h3 class="gifts-title">Заказывайте мороженое и получайте подарки!</h3>
 
         <ul class="gifts-list">
-            <div class="gifts-inner">
+            <div class="gifts-inner raspberry">
                  <li class="gifts-list-item">
                 <h4>Малинка даром!</h4>
             <p class="gifts-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового
                 варенья бесплатно.</p>
             <button class="gifts-btn">Хочу подарок</button>
             </li>
-            <img class= "gifts-picture" src="images/raspberry.png" width="219" height="268" alt="малина фото">
+         
             </div>
 
-            <div class="gifts-inner">
+            <div class="gifts-inner marshmellow">
             <li class="gifts-list-item">
                 <h4>Маршмеллоу даром!</h4>
             <p class="gifts-text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно
@@ -156,7 +156,7 @@
             <button class="gifts-btn">Хочу подарок</button>
             </li>
 
-        <img class= "gifts-picture" src="images/marshmellow.png" width="219" height="268" alt="маршмеллоу фото">
+    
     </div>
 </ul>
 
@@ -168,29 +168,35 @@
 
 
             <ul class="bestsellers__list">
-            <li class="bestsellers__list-item"><img src="images/content/bestseller1.jpg" width="168" height="168" alt="Вкус Малина">
+            <li class="bestsellers__list-item"><img class="bestsellers__img" src="images/content/bestseller1.jpg" width="168" height="168" alt="Вкус Малина">
                 <h4>Малинка</h4>
                 <p class="bestsellers__info">Сливочное мороженое с малиновым джемом</p>
-                <b class="bestsellers__price">310 ₽/кг</b>
+                <div class="bestsellers__price-inner"><b class="price">310 ₽/кг</b>
                     <button class="busket"><img src="images/busket-logo.svg" width="32" height="32" alt="Перейти в корзину" class="busket-logo"></button>
-            </li>
-            <li class="bestsellers__list-item"><img src="images/content/bestseller2.jpg" width="168" height="168"alt="Вкус фисташка">
+            </div>
+                </li>
+
+
+            <li class="bestsellers__list-item"><img class="bestsellers__img" src="images/content/bestseller2.jpg" width="168" height="168"alt="Вкус фисташка">
                 <h4>Фисташка</h4>
                 <p class="bestsellers__info">Фисташковый пломбир с кусочками шоколада</p>
-                <b class="bestsellers__price">340 ₽/кг</b>
+                 <div class="bestsellers__price-inner"><b class="price">340 ₽/кг</b>
                 <button class="busket"><img src="images/busket-logo.svg" width="32" height="32" alt="Перейти в корзину" class="busket-logo"></button>
+            </div>
             </li>
-            <li class="bestsellers__list-item"><img src="images/content/bestseller3.jpg" width="168" height="168" alt="Вкус черника">
+            <li class="bestsellers__list-item"><img class="bestsellers__img" src="images/content/bestseller3.jpg" width="168" height="168" alt="Вкус черника">
                 <h4>Черника</h4>
                 <p class="bestsellers__info">Крем-брюле с черничным джемом</p>
-                <b class="bestsellers__price">330 ₽/кг</b>
+                 <div class="bestsellers__price-inner"><b class="price">330 ₽/кг</b>
                 <button class="busket"><img src="images/busket-logo.svg" width="32" height="32" alt="Перейти в корзину" class="busket-logo"></button>
+            </div>
             </li>
-            <li class="bestsellers__list-item"><img src="images/content/bestseller4.jpg" width="168" height="168" alt="Вкус Жвачки">
+            <li class="bestsellers__list-item"><img class="bestsellers__img" src="images/content/bestseller4.jpg" width="168" height="168" alt="Вкус Жвачки">
                 <h4>Бабл_гам</h4>
                 <p class="bestsellers__info">Ванильный пломбир со сладкой посыпкой</p>
-                <b class="bestsellers__price">320 ₽/кг</b>
+                 <div class="bestsellers__price-inner"><b class="price">320 ₽/кг</b>
                 <button class="busket"><img src="images/busket-logo.svg" width="32" height="32" alt="Перейти в корзину" class="busket-logo"></button>
+            </div>
             </li>
         </ul>
 
@@ -229,7 +235,7 @@
             <div class="subscription__to-mailing">
               <p>Подпишитесь на нашу сладкую рассылку и будьте всегда
                 в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                <form action="http://echo.htmlacademy.ru/" class="subscription__to-mailing-form" method="post">
+                <form class="subscription__to-mailing-form" action="http://echo.htmlacademy.ru/"  method="post">
                     <input class="subscription__to-mailing-form" type="email" placeholder="email@example.com">
                     <button class="button subscription__btn" type="submit">Отправить</button>
                 </form>
@@ -252,14 +258,17 @@
             <p class="info-form">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
 
              <p class="form delivery__date"><label for="date">Дата</label>
-              <input id="date" type="text" name="date" placeholder="01.04.2020">
+                <img class="tooltype tooltype-date" src="images/info.svg" width="14" height="14" alt="тултип">
+              <input class="field"  id="date" type="text" name="date" placeholder="01.04.2020">
               </p>
 
               <p class="form delivery__phone"><label for="phone">Телефон</label>
-                 <input id="phone" type="text" name="phone" placeholder="+7 800 999-00-00">
+                 <input class="field" id="phone" type="text" name="phone" placeholder="+7 800 999-00-00">
               </p>
                  <p class="form delivery__adress"><label for="adress">Адрес</label>
-                     <input id="adress" type="text" name="adress" placeholder="ул. Большая Конюшенная, 19/8">
+                    <img  class="tooltype tooltype-adress" src="images/info.svg" width="14" height="14" alt="тултип">
+                    <span class="tooltype-text">Введите название улицы, дома и квартиры</span>
+                     <input  class="field" id="adress" type="text" name="adress" placeholder="ул. Большая Конюшенная, 19/8">
                      </p>
 
                      <button class="button delivery-btn" type="submit">Отправить</button>
