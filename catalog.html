@@ -11,32 +11,47 @@
 
 
 
+  
   <div class="main__container">
-  <header class="header">
-    <div class="header__info">
-        <img class="logo" src="images/logo-shop.svg" width="137" height="56" alt="логотип магазина">
-        <nav class="navigation">
-            <ul class="menu-list">
-                <li class="menu-item"><a class="menu-link"href="catalog.html">Каталог</a></li>
-                <li class="menu-item"><a class="menu-link"href="#">Доставка и оплата</a></li>
-                <li class="menu-item"><a class="menu-link" href="#index.html">О компании</a></li>
-            </ul>
-        </nav>
-    </div>
+    <header class="header">
+        <div class="header__info">
+            <img class="logo" src="images/header/logo-shop.svg" width="137" height="56" alt="логотип магазина">
+            <nav class="navigation">
+                <ul class="menu-list">
+                    <li class="menu-item"><a class="menu-link" href="catalog.html">Каталог</a>
+                      <svg class="arrow-down" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.808 7.053a.667.667 0 1 0-.943.943l4.66 4.66a.664.664 0 0 0 .955 0l4.661-4.66a.667.667 0 0 0-.942-.943l-4.196 4.195-4.195-4.195Z"/>
+                      </svg>
+                    </li>
+                    <li class="menu-item"><a class="menu-link" href="#">Доставка и оплата</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#index.html">О компании</a></li>
+                </ul>
+            </nav>
+        </div>
 
-    <div class="header__contacts">
-        <a  class="phone" href="tel:+78005558628"><b>+7 800 555-86-28</b></a>
         <ul class="menu-search">
-            <li class="menu-item"><a href="#" class="menu-link">
-                    <p class="visually-hidden">Поиск</p></a></li>
-            <li class="menu-item"><a href="#" class="menu-link">Вход</a></li>
+            <li><a  class="menu-item phone" href="tel:+78005558628">+7 800 555-86-28</a></li>
 
-            <li class="menu-item"><a href="#" class="menu-link">
-                    <p class="visually-hidden">Корзина</p>
-                </a></li>
-            </ul>
+                <li class="menu-item"><a href="#" class="menu-link">
+                    <svg class="navigation-icon  search-logo" aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.663 8.188a4.667 4.667 0 1 1 8.028 3.237.67.67 0 0 0-.123.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z" fill="#2D3440"/>
+                      </svg>
+                        <p class="visually-hidden">Поиск</p></a></li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link link-login">
+                    <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2.52461C9 2.15642 9.29848 1.85794 9.66667 1.85794H12.3333C12.8638 1.85794 13.3725 2.06865 13.7475 2.44373C14.1226 2.8188 14.3333 3.32751 14.3333 3.85794V13.1913C14.3333 13.7217 14.1226 14.2304 13.7475 14.6055C13.3725 14.9806 12.8638 15.1913 12.3333 15.1913H9.66667C9.29848 15.1913 9 14.8928 9 14.5246C9 14.1564 9.29848 13.8579 9.66667 13.8579H12.3333C12.5101 13.8579 12.6797 13.7877 12.8047 13.6627C12.9298 13.5377 13 13.3681 13 13.1913V3.85794C13 3.68113 12.9298 3.51156 12.8047 3.38654C12.6797 3.26151 12.5101 3.19127 12.3333 3.19127H9.66667C9.29848 3.19127 9 2.8928 9 2.52461ZM5.86189 4.71987C6.12224 4.45952 6.54435 4.45952 6.8047 4.71987L10.1338 8.04897C10.1509 8.06579 10.1671 8.08353 10.1824 8.1021C10.2142 8.1409 10.2411 8.18246 10.2628 8.22589C10.3079 8.31575 10.3333 8.41721 10.3333 8.52461C10.3333 8.63323 10.3074 8.73579 10.2613 8.8264C10.241 8.86635 10.2164 8.90469 10.1876 8.94072C10.1708 8.96172 10.1527 8.98169 10.1335 9.0005L6.8047 12.3293C6.54435 12.5897 6.12224 12.5897 5.86189 12.3293C5.60154 12.069 5.60154 11.6469 5.86189 11.3865L8.05715 9.19127H1.66667C1.29848 9.19127 1 8.8928 1 8.52461C1 8.15642 1.29848 7.85794 1.66667 7.85794H8.05715L5.86189 5.66268C5.60154 5.40233 5.60154 4.98022 5.86189 4.71987Z" fill="#2D3440"/>
+                        </svg>Вход</a>
+                    </li>
 
-    </div>
+                <li class="menu-item">
+                    <a href="#" class="menu-link link-busket">
+                    <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#2D3440"/>
+                      </svg>
+                        <p class="visually-hidden">Корзина</p>2 товара</a>
+                </li>
+         </ul>
 
 </header>
 
@@ -65,7 +80,7 @@
   </div>
   <section class="catalog">
     <h2 class="visually-hidden">Все виды мороженого с фильтрами</h2>
-
+<div class="catalog__inner">
     <form  class="catalog__filter" action="http://echo.htmlacademy.ru/" method="get">
 
 
@@ -128,6 +143,7 @@
 
   <button class="catalog-button" type="submit">Применить</button>
   </form>
+  </div>
 </section>
 
 <section class="cards-product">
