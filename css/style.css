@@ -133,7 +133,7 @@ body{
     bottom: 0;
     left: 0;
     margin: auto;
-    
+
 }
 .menu-item .link-login .navigation-icon,
 .menu-item .link-busket .navigation-icon{
@@ -152,10 +152,10 @@ left: 16px;
         width: 540px;
         padding: 136px 41px 0 70px;
     }
-    
+
     .top__slider-images{
-       
-        width: 348px;
+
+        width: 306px;
         margin: 21px 0 26px 0;
         background-image: url(../images/slider/page1/raund.png);
         background-repeat: no-repeat;
@@ -173,7 +173,7 @@ left: 16px;
     }
 
 
-          
+
 
     .top__slider-control-button{
         position: absolute;
@@ -183,7 +183,7 @@ left: 16px;
         width: 100%;
         transform: translateY(-50%);
     }
-    
+
 
 
 .top__slider-title{
@@ -193,7 +193,7 @@ left: 16px;
     margin-bottom: 24px;
 }
 .top__slider-btn{
-   
+
     text-align: center;
     background-color: #FCFCFC;
     border: 4px solid rgba(252, 252, 252, 0.4);
@@ -205,7 +205,7 @@ left: 16px;
    cursor: pointer;
    margin-top: 48px;
 }
-    
+
 .top__slider-pagination{
     position: absolute;
     bottom: 0;
@@ -217,11 +217,11 @@ left: 16px;
     box-sizing: border-box;
     width: 38px;
     height: 38px;
-    background-color: rgba(252, 252, 252, 0.3);  
+    background-color: rgba(252, 252, 252, 0.3);
     border: 2px solid rgba(252, 252, 252, 1);
     border-radius: 50%;
     padding: 11px;
-    
+
     }
     .top__slider-pagination-arrow-next,
     .top__slider-pagination-arrow-back{
@@ -229,26 +229,26 @@ left: 16px;
     }
     .top__slider-pagination-arrow:hover{
         box-sizing: border-box;
-        background-color: rgba(252, 252, 252, 0.5); 
+        background-color: rgba(252, 252, 252, 0.5);
         border: none;
         border-radius: 50%;
         padding: 11px;
         }
         .top__slider-pagination-arrow:focus{
             box-sizing: border-box;
-            background-color: rgba(252, 252, 252, 0.5); 
+            background-color: rgba(252, 252, 252, 0.5);
             border: 2px solid rgba(45, 52, 64, 1) ;
             border-radius: 50%;
             padding: 11px;
-            } 
+            }
             .top__slider-pagination{
                 display: flex;
                 justify-content: start;
                 margin-bottom: 0;
                 padding: 0;
                 list-style-type: none;
-            }  
-        
+            }
+
             .slider-pagination-button {
                 width: 12px;
                 height: 12px;
@@ -258,7 +258,7 @@ left: 16px;
                 border: none;
                 border-radius: 50%;
                 cursor: pointer;
-            }  
+            }
             .slider-pagination-button:hover {
                 background-color: rgba(252, 252, 252, 0.5);
                 border: 1px solid  rgba(252, 252, 252, 1);
@@ -271,7 +271,7 @@ left: 16px;
                 background-color: rgba(252, 252, 252, 1);
             }
 
-   
+
 
 
 .menu-link{
@@ -327,7 +327,7 @@ padding: 36px 219px 36px 36px;
     width: 570px;
     border-radius: 16px;
 background-color: #FF7799;
-   
+
 }
 .gifts-inner.raspberry{
     background-image: url(../images/raspberry.png);
@@ -348,12 +348,23 @@ background-color: #FF7799;
 .gifts-btn{
   text-align: center;
     background-color: #FCFCFC;
-    border: 4px solid rgba(252, 252, 252, 0.4);
+    border: 4px solid rgba(242, 180, 197, 1);
     border-radius: 26px;
     padding: 12px 32px;
     font-weight: 700;
     font-size: 16px;
     cursor: pointer;
+}
+.gifts-btn:hover{
+    background-color: rgba(242, 180, 197, 1);
+    border: 4px solid #FCFCFC;
+}
+.gifts-btn:focus{
+    border: 2px solid #2D3440;
+}
+.gifts-btn:active{
+    background-color: rgba(242, 180, 197, 1);;
+    border: 2px solid #2D3440;
 }
 
 
@@ -388,15 +399,16 @@ width: 270px;
 
 }
 .bestsellers__img{
+    width:60%;
+    height:60%;
+    clip-path: circle(47%);
     object-fit: cover;
-    width: 58%;
-    height: 61%;
-    border-radius: 50%;
-    margin-top: -56px;
+    margin-top: -50px;
+    box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
 }
 .bestsellers__list-item h4{
     margin: 16px auto 8px;
-   
+
 }
 .bestsellers__info{
     font-weight: 400;
@@ -409,14 +421,10 @@ width: 270px;
 .bestsellers__price .price{
     font-weight: 700;
     font-size: 20px;
-    line-height: 24px; 
+    line-height: 24px;
     padding-top: 4px;
 }
-.busket{
-    border-radius: 50%;
 
-  cursor: pointer;
-}
 .bestsellers__price-inner{
 display: flex;
 justify-content: space-between;
@@ -424,7 +432,41 @@ padding-left: 40px;
 padding-right: 40px;
 padding-bottom: 24px;
 }
-
+.busket{
+    width: 32px;
+    border-radius: 50%;
+    background-image:url(../images/busket-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+background-color: #FF2F64;
+border: 2px solid #FF2F64;
+  cursor: pointer;
+}
+.busket:hover{
+    background-color: #FCFCFC;
+    background-image: url(../images/busket-logo-black.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #FF2F64;
+      cursor: pointer;
+      color: #2D3440;
+}
+.busket:focus{
+    background-color: #FEAFC3;
+    background-image: url(../images/busket-logo-black.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #FF2F64;
+      cursor: pointer;
+      color: #2D3440;
+}
+.busket:active{
+    background-image:url(../images/busket-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FEAFC3;
+    border: 2px solid #2D3440;
+}
 
 /*-----------------вафельная рамка------------------*/
 
@@ -494,33 +536,70 @@ text-decoration: none;
 }
 .subscription__to-mailing{
     width: 570px;
-    padding: 26px 24px 42px 26px;
+    padding: 26px 24px;
     border: 6px solid #FF2F64 ;
     border-image: url(../images/background/slice-mail.png) 12 round round;
 border-radius: 16px;
 background-color:#fff ;
 }
+.subscription__to-mailing p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+}
+.subscription__to-mailing.field{
+    width: 332px;
+
+}
+.subscription__to-mailing-form{
+padding: 14px 16px;
+flex-grow: 1;
+border-radius: 4px;
+border: 1px solid #B9B9B9;
+}
+.subscription__to-mailing-form.placeholder{
+color: #B9B9B9;
+opacity: 0.5;
+}
+.subscription__to-mailing-form:hover{
+    border: 1px solid #2D3440;
+}
+.subscription__to-mailing-form:focus{
+    border: 2px solid #2D3440;
+}
 .button{
-    display: inline-block;
     padding: 12px 32px;
     text-align: center;
     background-color: #FF2F64;
     color: #fff;
-    border: 4px solid rgba(255, 47, 100, 0.3);
+    border: 4px solid rgba(242, 180, 197, 1);
     border-radius: 26px;
     padding: 12px 32px;
     font-weight: 700;
     font-size: 16px;
+    box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
     cursor: pointer;
 }
 
-.subscription__btn{
-
-    margin-top: 42px;
+.button:hover{
+    background-color: rgba(252, 252, 252, 0.4);
+    border: 4px solid rgba(255, 47, 100, 1);
+    color: #2D3440;
+}
+.button:focus{
+    background-color: rgba(252, 252, 252, 0.4);
+    border: 4px solid rgba(255, 47, 100, 1);
+    color: #2D3440;
+}
+.button:active{
+    background-color: rgba(255, 47, 100, 1);
+    border: 2px solid rgba(45, 52, 64, 0.1);
 }
 /*-----------------доставка--------------------*/
 
-  .delivery {
+.delivery{
       display: flex;
       justify-content: space-between;
     background-image: url("../images/background/bgr-delivery.jpg");
@@ -528,8 +607,6 @@ background-color:#fff ;
     border-radius: 16px;
     margin-top: 80px;
     padding: 64px;
-
-
 
 }
 .delivery__inner{
@@ -573,18 +650,18 @@ border-radius: 8px;
 /*hover*/
 .field:hover{
     border: 1px solid  #2D3440;
-    color: #2D3440; 
+    color: #2D3440;
 }
 /*focus*/
 .field:focus{
     outline: 2px solid  #2D3440;
-    color: #2D3440; 
+    color: #2D3440;
 }
 /*disabled*/
 .field:disabled,
 .field:disabled:hover{
     outline: 1px solid  #FF2F64;
-    color: #2D3440; 
+    color: #2D3440;
 }
 /*invalid*/
 .field:invalid{
@@ -602,11 +679,11 @@ border-radius: 8px;
 }
 .tooltype-date{
     margin-left: 40px;
-   
-}    
+
+}
  .tooltype-adress{
     margin-left: 54px;
- } 
+ }
 
 .tooltype-text{
     position: absolute;
@@ -624,12 +701,12 @@ border-radius: 8px;
 .tooltype-adress:hover .tooltype-text{
     display: block;
 }
-    
+
 
 
 .form{
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
 }
 
 .form label{
@@ -641,7 +718,7 @@ border-radius: 8px;
 }
 .info-form{
    grid-column: 1/-1;
-   justify-self: start; 
+   justify-self: start;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -760,7 +837,7 @@ cursor: pointer;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-   
+
     color: inherit;
     padding: 15px 15px 0 0 ;
 }
@@ -785,7 +862,7 @@ flex-direction: row;
 }
 .breadcrumbs-link{
         text-decoration: none;
-        color: inherit;  
+        color: inherit;
 }
  .breadcrumbs-item:not(:last-child){
 background-image: url(../images/catalog/chevrons-right.svg);
@@ -793,7 +870,7 @@ background-repeat: no-repeat;
 background-position: right;
 }
 .breadcrumbs-item:last-child{
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 
