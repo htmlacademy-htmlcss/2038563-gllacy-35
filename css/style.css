@@ -1,12 +1,13 @@
 @font-face{
-    font-family: "Inter"    font-style: normal;
+    font-family: "Inter";
+    font-style: normal;
     font-weight: 700;
 src: url("fonts/inter-700.woff2") format("woff2");
 font-display: swap;
 }
 @font-face{
     font-family: "Inter";
-    font-style: regular;
+    font-style: normal;
     font-weight: 400;
 src: url("fonts/inter-400.woff2") format("woff2");
 font-display: swap;
@@ -111,7 +112,7 @@ body{
    flex-wrap: wrap;
    list-style: none;
 }
-.menu-search .menu-item .menu-link{
+.menu-item .menu-link{
     box-sizing: border-box;
     text-align: center;
     background-color: rgba(252, 252, 252, 0.3);
@@ -143,18 +144,18 @@ left: 16px;
 
 
     /*-------------------------------------слайдер----------------------------*/
-    .top__slider{
-        position: relative;
+    .top__slider-1
+    {
         display: flex;
-
     }
     .top__slider-info{
+        box-sizing: border-box;
         width: 540px;
         padding: 136px 41px 0 70px;
     }
 
     .top__slider-images{
-
+    box-sizing: border-box;
         width: 306px;
         margin: 21px 0 26px 0;
         background-image: url(../images/slider/page1/raund.png);
@@ -162,7 +163,7 @@ left: 16px;
         background-position: 50% 50%;
     }
     .top__slider-next-page{
-        position: relative;
+
         width: 278px;
         display: flex;
         justify-content: flex-end;
@@ -176,14 +177,13 @@ left: 16px;
 
 
     .top__slider-control-button{
-        position: absolute;
+
         top: 50%;
         display: flex;
         justify-content: space-between;
         width: 100%;
         transform: translateY(-50%);
     }
-
 
 
 .top__slider-title{
@@ -193,21 +193,11 @@ left: 16px;
     margin-bottom: 24px;
 }
 .top__slider-btn{
-
-    text-align: center;
-    background-color: #FCFCFC;
-    border: 4px solid rgba(252, 252, 252, 0.4);
-    border-radius: 26px;
-    padding: 12px 32px;
-    font-weight: 700;
-    font-size: 16px;
-    box-shadow: inset 0 4 0 4px rgba(45, 52, 64, 0.1);
-   cursor: pointer;
    margin-top: 48px;
 }
 
 .top__slider-pagination{
-    position: absolute;
+
     bottom: 0;
 }
 .top__slider-pagination-item{
@@ -220,13 +210,9 @@ left: 16px;
     background-color: rgba(252, 252, 252, 0.3);
     border: 2px solid rgba(252, 252, 252, 1);
     border-radius: 50%;
-    padding: 11px;
+padding: 11px;
+    }
 
-    }
-    .top__slider-pagination-arrow-next,
-    .top__slider-pagination-arrow-back{
-        padding: 3px  6px 4px;
-    }
     .top__slider-pagination-arrow:hover{
         box-sizing: border-box;
         background-color: rgba(252, 252, 252, 0.5);
@@ -241,6 +227,35 @@ left: 16px;
             border-radius: 50%;
             padding: 11px;
             }
+
+            .button-white{
+                padding: 12px 32px;
+                text-align: center;
+                background-color: #FCFCFC;
+                color:#2D3440;
+                border: 4px solid rgba(242, 180, 197, 1);
+                border-radius: 26px;
+                padding: 12px 32px;
+                font-weight: 700;
+                font-size: 16px;
+                box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
+                cursor: pointer;
+            }
+
+            .button-white:hover{
+                background-color: rgba(252, 252, 252, 0.4);
+                border: 4px solid rgba(255, 47, 100, 1);
+                color: #2D3440;
+            }
+            .button-white:focus{
+                background-color: rgba(252, 252, 252, 0.4);
+                border: 4px solid rgba(255, 47, 100, 1);
+                color: #2D3440;
+            }
+            .button-white:active{
+                background-color: rgba(255, 47, 100, 1);
+                border: 2px solid rgba(45, 52, 64, 0.1);
+            }
             .top__slider-pagination{
                 display: flex;
                 justify-content: start;
@@ -248,7 +263,6 @@ left: 16px;
                 padding: 0;
                 list-style-type: none;
             }
-
             .slider-pagination-button {
                 width: 12px;
                 height: 12px;
@@ -270,9 +284,24 @@ left: 16px;
             .slider-pagination-button-current{
                 background-color: rgba(252, 252, 252, 1);
             }
+/*------slide-2-----------*/
 
+.top__slider-2{
+    display: flex;
+    background-color:rgba(105, 169, 255, 1) ;
+}
+.top__slider-images.slide-2{
+    background-image: url(../images/slider/page2/round2.png);
+}
 
+.top__slider-3{
+    display: flex;
+    background-color: rgba(252, 200, 80, 1);
+}
+.top__slider-images.slide-3{
+    background-image: url(../images/slider/page3/round3.png);
 
+}
 
 .menu-link{
     font-family: Inter, sans-serif;
@@ -290,14 +319,24 @@ left: 16px;
     color:inherit;
     text-decoration: none;
 }
-.social-links.top__slider{
-    position: absolute;
+.social-links{
    bottom: 0px;
     display: flex;
     justify-content:space-between;
     width: 104px;
     list-style: none;
     cursor: pointer;
+}
+.social-link:hover{
+    background-color: #2D3440;
+    z-index: 2;
+width: 28px;
+height: 28px;
+    clip-path: circle(50%);
+
+}
+.social-link:active{
+  background-color: #FEAFC3;
 }
 
 
@@ -394,6 +433,8 @@ background-color: #FF7799;
 background-color: #FCFCFC;
 border-radius: 8px;
 width: 270px;
+box-sizing: border-box;
+padding: 0 40px 24px;
 
 
 
@@ -401,7 +442,7 @@ width: 270px;
 .bestsellers__img{
     width:60%;
     height:60%;
-    clip-path: circle(47%);
+    clip-path: circle(50%);
     object-fit: cover;
     margin-top: -50px;
     box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
@@ -428,12 +469,11 @@ width: 270px;
 .bestsellers__price-inner{
 display: flex;
 justify-content: space-between;
-padding-left: 40px;
-padding-right: 40px;
-padding-bottom: 24px;
+
 }
 .busket{
     width: 32px;
+    height: 32px;
     border-radius: 50%;
     background-image:url(../images/busket-logo.svg);
     background-repeat: no-repeat;
@@ -470,34 +510,44 @@ border: 2px solid #FF2F64;
 
 /*-----------------вафельная рамка------------------*/
 
+.info__wafer{
+    box-sizing: border-box;
+    background-image: url(../images/background/wafer.jpg);
+    margin-top: 80px;
+    padding: 24px;
+    border-radius: 16px;
+}
+.info__inner{
+    width: 1122px;
+    box-sizing: border-box;
+    background-color: #FCFCFC;
+    border-radius: 16px;
+    padding: 56px 40px;
+}
 
 .info__list{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
-    width: 1074px;
-    margin-top: 80px;
     background-color:#fff ;
     border-radius: 16px;
-    padding: 56px 40px;
     border-radius: 16px;
-
-    border: 24px solid #FF2F64;
     border-image: url(../images/background/slice-wafer.png) 24 round round;
 
 }
 .info__title{
     text-align: center;
-    margin-bottom: 56px;
-
 
 }
 .info__text {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
     width: 505px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
 }
 .info-logo{
     padding-right:16px;
@@ -506,7 +556,7 @@ border: 2px solid #FF2F64;
 }
 /*-------------10 способов  подписки--------------------------*/
 
-.subscription{
+.subscription__inner{
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
@@ -519,26 +569,25 @@ border: 2px solid #FF2F64;
 }
 .subscription__serving{
 width: 570px;
+box-sizing: border-box;
 background-image: url("../images/background/bgr-subsription-serving.jpg");
 background-repeat: no-repeat;
-
 border-radius: 16px;
-padding: 32px 235px 67px 32px;
+padding: 32px;
 }
 
 .subscription__serving-link{
-min-width: 303px;
+display: block;
+max-width: 303px;
 font-weight: 700;
 font-size: 24px;
 line-height: 30px;
 text-decoration: none;
-
 }
 .subscription__to-mailing{
-    width: 570px;
-    padding: 26px 24px;
-    border: 6px solid #FF2F64 ;
-    border-image: url(../images/background/slice-mail.png) 12 round round;
+    box-sizing: border-box;
+ width: 570px;
+padding: 26px 24px;
 border-radius: 16px;
 background-color:#fff ;
 }
@@ -552,12 +601,14 @@ background-color:#fff ;
 .subscription__to-mailing.field{
     width: 332px;
 
+
 }
 .subscription__to-mailing-form{
 padding: 14px 16px;
 flex-grow: 1;
 border-radius: 4px;
 border: 1px solid #B9B9B9;
+flex-grow: 1;
 }
 .subscription__to-mailing-form.placeholder{
 color: #B9B9B9;
@@ -569,11 +620,11 @@ opacity: 0.5;
 .subscription__to-mailing-form:focus{
     border: 2px solid #2D3440;
 }
-.button{
+.button-rose{
     padding: 12px 32px;
     text-align: center;
     background-color: #FF2F64;
-    color: #fff;
+    color:#FCFCFC;
     border: 4px solid rgba(242, 180, 197, 1);
     border-radius: 26px;
     padding: 12px 32px;
@@ -583,23 +634,29 @@ opacity: 0.5;
     cursor: pointer;
 }
 
-.button:hover{
-    background-color: rgba(252, 252, 252, 0.4);
+.button-rose:hover{
+    background-color: rgba(252, 252, 252, 0.3);
     border: 4px solid rgba(255, 47, 100, 1);
     color: #2D3440;
 }
-.button:focus{
-    background-color: rgba(252, 252, 252, 0.4);
-    border: 4px solid rgba(255, 47, 100, 1);
-    color: #2D3440;
+.button-rose:focus{
+    background-color: rgba(254, 175, 195, 1);
+    border: 2px solid rgba(45, 52, 64, 1);
+
 }
-.button:active{
+.button-rose:active{
     background-color: rgba(255, 47, 100, 1);
     border: 2px solid rgba(45, 52, 64, 0.1);
+}
+.button-rose.subscription__btn{
+
+    margin-right: 0;
+
 }
 /*-----------------доставка--------------------*/
 
 .delivery{
+    box-sizing: border-box;
       display: flex;
       justify-content: space-between;
     background-image: url("../images/background/bgr-delivery.jpg");
@@ -611,6 +668,7 @@ opacity: 0.5;
 }
 .delivery__inner{
     width: 371px;
+    box-sizing: border-box;
 }
 
 .delivery-title{
@@ -643,13 +701,11 @@ font: inherit;
 font-weight: 400;
 font-size: 16px;
 line-height: 20px;
-border: 1px solid #B9B9B9;
 border-radius: 8px;
 }
 
 /*hover*/
 .field:hover{
-    border: 1px solid  #2D3440;
     color: #2D3440;
 }
 /*focus*/
@@ -803,7 +859,9 @@ cursor: pointer;
 
 .footer__info{
     width: 356px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 126px 182px;
+    gap: 8px 24px;
     list-style-type: none;
     font-weight: 400;
   font-size: 14px;
