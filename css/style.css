@@ -62,61 +62,109 @@ body{
     padding: 24px 0;
 
 }
+.navigation-list{
+        display: flex;
+        list-style-type: none;
+        font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+ }
+
+/*___________1 часть хедера "info"___________________*/
 .header__info{
-    margin: 0;
-    padding: 0;
     width: 575px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
+.info-list{
+    margin-left: 16px;
+}
 
-.navigation-list{
-width: 431px;
+.info-list .menu-link{
+    padding: 8px 16px;
+}
+.catalog-pop::after{
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/arrow-down.svg);
+    background-repeat: no-repeat;
+}
+/*___________2 часть хедера "search"___________________*/
+
+.search-list{
+    width: 431px;
     display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 0;
-    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+padding: 12px 0;
 }
-.search-list:not(:first-of-type){
+
+.search-list .list-item:not(:first-child){
 box-sizing: border-box;
-  padding: 8px 16px;
-  text-align: center;
-  background-color: rgba(252, 252, 252, 0.3);
-  border-radius: 30px;
-  margin-left: 32px;
-}
+padding: 6px 16px 6px 38px;
+    background-color: rgba(252, 252, 252, 0.3);
+    border-radius: 30px;
+  }
+  .search-list .list-item:nth-child(2){
+    padding: 16px;
+  }
 
 
-.list-item:hover{
-    background-color: rgba(252, 252, 252, 0.5);
-}
-.list-item:focus{
-    background-color: rgba(252, 252, 252, 0.5);
-    border-radius: 30px ;
-    border-color: solid 2px rgba(45, 52, 64, 1)
-}
-.list-item .menu-link{
+
+.search-list .list-item{
     position: relative;
-    margin-left: 32px;
 }
 
 .navigation-icon{
     position: absolute;
-    top: 0;
+    top: 7px;
     right: 0;
     bottom: 0;
-    left: 0;
-    margin: auto;
+    left: 14px;
 }
+.search-logo{
+    left: 8px;
+}
+
 .link-phone{
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-decoration: none;
     color: inherit;
+}
+
+.menu-link:hover{
+    background-color: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    padding: 6px 16px;
+}
+.menu-link:focus{
+    background-color: rgba(252, 252, 252, 0.5);
+    border-color: solid 2px rgba(45, 52, 64, 1);
+    border-radius: 30px;
+}
+.menu-link:active{
+    background-color: rgba(252, 252, 252, 1);
+    border-radius: 30px;
+}
+.search-list .menu-link:hover{
+    background-color: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+}
+.search-list .menu-link:focus{
+    background-color: rgba(252, 252, 252, 0.5);
+    border-color: solid 2px rgba(45, 52, 64, 1);
+    border-radius: 30px;
+}
+.search-list .menu-link:active{
+    background-color: rgba(252, 252, 252, 1);
+    border-radius: 30px;
 }
 
 
@@ -966,8 +1014,10 @@ background-position: right;
 
 /*-----селектор----*/
 .sorting__inner{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    width: 823px;
+    grid-template-columns: 196px 164px 174px 185px;
+    gap: 16px 24px;
 }
 
 .catalog__select{
@@ -987,23 +1037,17 @@ appearance: none;
 /*-------цена----*/
 .range{
     width: 196px;
-    height: 36px;
     margin-top: 8px;
 margin-bottom: 10px;
-    background-color: rgba(252, 252, 252, 0.3);
-border-radius: 20px;
-}
+} 
+
 .range-wrapper-inputs{
     display: flex;
     justify-content: center;
     margin-top: -20px;
-
 }
-.catalog-filter-label{
 
-    display: flex;
-    margin-right: 5px;
-}
+
 .range-input{
     width: 24px;
     padding: 0 2px;
@@ -1024,7 +1068,6 @@ border-radius: 20px;
 .range-scale{
     width: 164px;
     position: absolute;
-
     height: 2px;
     background-color:rgba(86, 92, 102, 0.3);
     border-radius: 2px;
@@ -1036,9 +1079,8 @@ border-radius: 20px;
 position: absolute;
 height: 2px;
 background-color: rgba(86, 92, 102, 1);
-
-
 }
+
 .range-toggle{
     position: absolute;
     width: 16px;
@@ -1047,8 +1089,6 @@ background-color: rgba(86, 92, 102, 1);
     border: 6px solid #2D3440;
     border-radius: 50%;
     cursor: pointer;
-
-
 }
 .range-toggle:hover{
     background: #2D3440;
@@ -1074,6 +1114,19 @@ background-color: rgba(86, 92, 102, 1);
 }
 /*------------радио-кнопки-----*/
 
+.catalog__filter-list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    background-color: rgba(252, 252, 252, 0.3);
+    border-radius: 20px;
+    padding: 10px 24px;
+}
+
+.catalog__filter-list.filter-fat{
+    width: 383px;  
+    grid-template-columns: 3/5; 
+}
 
 .control-input[type="radio"] +.control-mark{
     border-radius: 50%;
@@ -1097,17 +1150,14 @@ background-color: rgba(86, 92, 102, 1);
 
 
 /*------------------квадратные кнопки-----*/
-.catalog__filter-list{
+.catalog__filter-list.filter-filling{
     width: 809px;
-    margin: 0;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    background-color: rgba(252, 252, 252, 0.3);
-    border-radius: 20px;
-    padding: 10px 24px;
-
-
+    grid-template-columns: 1/4;
+    grid-template-rows: 2/3;
+   
+}
+.catalog__filter-title{
+    margin-bottom: 8px;
 }
 .control{
     position: relative;
@@ -1123,7 +1173,6 @@ margin-left: 16px;
     height: 16px;
     border: 2px solid #2D3440;
     border-radius: 4px;
-
 }
 
 .control:hover .control-mark{
