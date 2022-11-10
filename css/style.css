@@ -500,66 +500,7 @@ body {
 
 
 .bestsellers__title {
-
     width: 526px;
-
-}
-
-.bestsellers__list {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    text-align: center;
-    margin: 112px 0 0 0;
-    padding: 0;
-
-}
-
-.bestsellers__list-item {
-
-    background-color: #FCFCFC;
-    border-radius: 8px;
-    width: 270px;
-    box-sizing: border-box;
-    padding: 0 40px 24px;
-
-
-
-}
-
-.bestsellers__img {
-    width: 60%;
-    height: 60%;
-    clip-path: circle(50%);
-    object-fit: cover;
-    margin-top: -50px;
-    box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
-}
-
-.bestsellers__list-item h4 {
-    margin: 16px auto 8px;
-
-}
-
-.bestsellers__info {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
-    margin: 0 auto 16px;
-}
-
-.bestsellers__price .price {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    padding-top: 4px;
-}
-
-.bestsellers__price-inner {
-    display: flex;
-    justify-content: space-between;
-
 }
 
 .busket {
@@ -1354,7 +1295,7 @@ body {
 .cards__list {
     display: grid;
     grid-template-columns: repeat(4, 270px);
-    gap: 30px;
+    gap: 40px 30px;
     list-style-type: none;
     margin: 24px 0 16px;
     padding: 0;
