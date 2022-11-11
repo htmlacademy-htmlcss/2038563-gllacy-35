@@ -155,7 +155,7 @@ body {
 .menu-link:hover {
     background-color: rgba(252, 252, 252, 0.5);
     border-radius: 30px;
-    padding: 6px 16px;
+  
 }
 
 .menu-link:focus {
@@ -253,6 +253,8 @@ body {
 
 .top__slider-pagination-arrow {
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
     width: 38px;
     height: 38px;
     background-color: rgba(252, 252, 252, 0.3);
@@ -263,8 +265,9 @@ body {
 
 .top__slider-pagination-arrow:hover {
     box-sizing: border-box;
-    background-color: rgba(252, 252, 252, 0.5);
-    border: none;
+    background-color: rgba(252, 252, 252, 1);
+    display: flex;
+    align-items: center;
     border-radius: 50%;
     padding: 11px;
 }
@@ -329,12 +332,19 @@ body {
 
 .slider-pagination-button:hover {
     background-color: rgba(252, 252, 252, 0.5);
-    border: 1px solid rgba(252, 252, 252, 1);
+    border: 4px solid rgba(252, 252, 252, 1);
+    box-shadow: 0 4px 12px 0 rgba(133, 133, 133, 0.15);
 }
 
 .slider-pagination-button:focus {
+    background-color: rgba(252, 252, 252, 1);
+    border: 2px solid rgba(45, 52, 64, 1);
+    box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
+}
+.slider-pagination-button:active{
     background-color: rgba(252, 252, 252, 0.5);
-    border: 1px solid rgba(45, 52, 64, 1);
+    border: 2px solid rgba(45, 52, 64, 1); 
+    box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1); 
 }
 
 .slider-pagination-button-current {
@@ -345,7 +355,7 @@ body {
 
 .top__slider-2 {
     display: flex;
-    background-color: rgba(105, 169, 255, 1);
+ 
 }
 
 .top__slider-images.slide-2 {
@@ -354,7 +364,7 @@ body {
 
 .top__slider-3 {
     display: flex;
-    background-color: rgba(252, 200, 80, 1);
+   
 }
 
 .top__slider-images.slide-3 {
@@ -653,8 +663,10 @@ body {
 
 .subscription__to-mailing.field {
     width: 332px;
-
-
+}
+.field.field-subscribtion{
+    display: flex;
+    border: none;
 }
 
 .subscription__to-mailing-form {
@@ -710,9 +722,7 @@ body {
 }
 
 .button-rose.subscription__btn {
-
-    margin-right: 0;
-
+    margin-left: 10px;
 }
 
 /*-----------------доставка--------------------*/
@@ -830,7 +840,7 @@ body {
 
 }
 
-.tooltype-adress:hover .tooltype-text {
+.tooltype-adress:hover.tooltype-text {
     display: block;
 }
 
@@ -1054,13 +1064,12 @@ body {
     grid-template-columns: 196px 164px 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 16px 24px;
-    min-height: 65px;
     margin-bottom: 44px;
 }
 
 .catalog__filter-group {
     margin: 0;
-    padding: 8px 16px;
+    padding: 0;
     border: none;
 }
 
@@ -1073,7 +1082,7 @@ body {
 }
 .control-label{
     margin-top: 0px;
-    margin-bottom: 8px;
+    
 }
 
 /*-----селектор----*/
@@ -1094,15 +1103,15 @@ body {
 }
 
 /*-------цена----*/
+
 .range {
     width: 196px;
-   
 }
 
 .range-wrapper-inputs {
     display: flex;
     justify-content: center;
-    margin-top: -28px;
+    margin-top: -20px;
 }
 .range-input {
     width: 24px;
@@ -1125,8 +1134,7 @@ body {
     height: 2px;
     background-color: rgba(86, 92, 102, 0.3);
     border-radius: 2px;
-    margin-top: 18px;
-    margin-left: 16px;
+    margin-top: 26px;
 }
 
 .range-bar {
@@ -1162,6 +1170,7 @@ body {
 }
 
 .toggle-min {
+    
     top: -8px;
     right: -10px;
 }
@@ -1174,25 +1183,25 @@ body {
 /*------------радио-кнопки-----*/
 .catalog__filter-group.fat{
     grid-column: 3/5;
-    grid-row: 1/2;
-    
+    grid-row: 1/2;   
 }
+
 
 .catalog__filter-list {
     list-style-type: none;
     display: flex;
     align-items: center;
+   justify-content: space-evenly;
     background-color: rgba(252, 252, 252, 0.3);
     border-radius: 20px;
-    padding: 10px 24px;
-    margin: 0;
+    margin: 8px 0 0;
+    padding: 8px 24px;
 }
-
-.catalog__filter-list.filter-fat {
+.catalog__filter-list .filter-fat {
     width: 383px;
 }
 
-.control-input[type="radio"]+.control-mark {
+.control-input[type="radio"]+ .control-mark {
     border-radius: 50%;
 }
 
@@ -1200,7 +1209,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    margin-left: 32px;
+    margin-left: 26px;
 }
 
 .control-input[type="radio"]:checked+.control-mark::before {
@@ -1222,13 +1231,16 @@ body {
 }
 
 .catalog__filter-list.filter-filling {
-    width: 604px;  
+    width: 604px;
+    display: flex; 
+    padding: 9px 0; 
+   
 }
 
-.control {
+
+.control{
     position: relative;
     display: block;
-    margin-left: 16px;
     margin-right: 0;
 }
 
@@ -1276,11 +1288,11 @@ body {
 
 /*----button-filter-----*/
 
-.catalog-button {
+.catalog-filter-button {
    
     grid-row: 2/3;
     grid-column: 4/5;
-    box-sizing: border-box;
+   align-self: flex-end;
     width: 185px;
     padding: 8px 52px;
     border: 2px solid #FCFCFC;
