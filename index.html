@@ -16,10 +16,16 @@
             <div class="header__info">
                 <img class="logo" src="images/header/logo-shop.svg" width="137" height="56" alt="логотип магазина">
                 <nav class="navigation">
-                    <ul class="navigation-list info-list">
-                        <li class="list-item catalog-pop"><a class="menu-link" href="catalog.html">Каталог</a>
+                    <ul class="navigation-list left-list">
+                        <li class="list-item catalog-pop"><a class="menu-link" href="catalog.html">Каталог
 
-
+                                <svg class="catolog__arrow-down" width="12" height="10" viewBox="0 0 12 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.808 1.053a.667.667 0 0 0-.943.943l4.66 4.66a.665.665 0 0 0 .955 0l4.661-4.66a.667.667 0 0 0-.942-.943L6.003 5.248 1.808 1.053Z"
+                                        fill="#2D3440" />
+                                </svg>
+                            </a>
                             <!------------------popover catalog-------->
                             <div class="popover popover__catalog">
                                 <div class="popover-catalog-inner">
@@ -32,22 +38,20 @@
                                     </ul>
                                 </div>
                             </div>
-
+                            <!------------------------------------------------>
                         </li>
 
 
 
 
 
-
-                        <!------------------------------------------------>
                         <li class="list-item"><a class="menu-link" href="#">Доставка и оплата</a></li>
                         <li class="list-item"><a class="menu-link" href="#index.html">О компании</a></li>
                     </ul>
                 </nav>
             </div>
 
-            <ul class="navigation-list search-list">
+            <ul class="navigation-list right-list">
                 <li class="list-item">
                     <a class="link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
                 </li>
@@ -55,7 +59,7 @@
                 <li class="list-item">
                     <a class="menu-link" href="#">
                         <svg class="navigation-icon  search-logo" aria-hidden="true" focusable="false" width="16"
-                            height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            height="17" viewBox="0 0 16 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M2.663 8.188a4.667 4.667 0 1 1 8.028 3.237.67.67 0 0 0-.123.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z"
                                 fill="#2D3440" />
@@ -81,7 +85,7 @@
                 <li class="list-item">
                     <a class="menu-link" href="#">
                         <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="17"
-                            viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            viewBox="0 0 16 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M9 2.52461C9 2.15642 9.29848 1.85794 9.66667 1.85794H12.3333C12.8638 1.85794 13.3725 2.06865 13.7475 2.44373C14.1226 2.8188 14.3333 3.32751 14.3333 3.85794V13.1913C14.3333 13.7217 14.1226 14.2304 13.7475 14.6055C13.3725 14.9806 12.8638 15.1913 12.3333 15.1913H9.66667C9.29848 15.1913 9 14.8928 9 14.5246C9 14.1564 9.29848 13.8579 9.66667 13.8579H12.3333C12.5101 13.8579 12.6797 13.7877 12.8047 13.6627C12.9298 13.5377 13 13.3681 13 13.1913V3.85794C13 3.68113 12.9298 3.51156 12.8047 3.38654C12.6797 3.26151 12.5101 3.19127 12.3333 3.19127H9.66667C9.29848 3.19127 9 2.8928 9 2.52461ZM5.86189 4.71987C6.12224 4.45952 6.54435 4.45952 6.8047 4.71987L10.1338 8.04897C10.1509 8.06579 10.1671 8.08353 10.1824 8.1021C10.2142 8.1409 10.2411 8.18246 10.2628 8.22589C10.3079 8.31575 10.3333 8.41721 10.3333 8.52461C10.3333 8.63323 10.3074 8.73579 10.2613 8.8264C10.241 8.86635 10.2164 8.90469 10.1876 8.94072C10.1708 8.96172 10.1527 8.98169 10.1335 9.0005L6.8047 12.3293C6.54435 12.5897 6.12224 12.5897 5.86189 12.3293C5.60154 12.069 5.60154 11.6469 5.86189 11.3865L8.05715 9.19127H1.66667C1.29848 9.19127 1 8.8928 1 8.52461C1 8.15642 1.29848 7.85794 1.66667 7.85794H8.05715L5.86189 5.66268C5.60154 5.40233 5.60154 4.98022 5.86189 4.71987Z"
                                 fill="#2D3440" />
@@ -90,9 +94,7 @@
                     <div class="popover popover__login">
                         <div class="popover-login-inner">
                             <p class="popover-login-title">Личный кабинет</p>
-                            <button class="modal-close-button">
-                                <span class="visually-hidden">Закрыть</span>
-                            </button>
+
 
                             <form class="input-form" action="https://echo.htmlacademy.ru/" method="post">
                                 <p class="field-group">
@@ -124,29 +126,17 @@
                                 <button class="button-rose login-form-button" type="submit">Войти</button>
 
                             </form>
-
-
-
-
-
-
                         </div>
                     </div>
-
-
-
-
-
-
-
-
-
-
-                    <!------------------popover catalog--------------------------->
+                    <!--------------------------------------------------------------------->
                 </li>
 
+
+
+
+
                 <li class="list-item">
-                    <a class="menu-link link-cart" href="#">
+                    <a class="menu-link" href="#">
                         <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="17"
                             viewBox="0 0 16 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -154,14 +144,19 @@
                         </svg>
                         <p class="visually-hidden">Корзина</p>2 товара
                     </a>
+
+
+                    <!------------------popover КОРЗИНА----------------->
                     <div class="popover popover__cart">
                         <button class="popover__close-button button-light">
                             <span class="visually-hidden">Закрыть</span>
                         </button>
                         <div class="popover__content">
                             <h4 class="popover__title">Корзина</h4>
-                            <ul class="cart-item-list">
 
+
+
+                            <ul class="cart-item-list">
                                 <li class="cart-item">
                                     <img class="cart-img" src="images/cart/raspberry-small.png" alt="" width="46"
                                         height="46">
@@ -227,34 +222,36 @@
 
                         <img class="top__slider-img" src="images/content/ice-cream1.png" width="306" height="507"
                             alt="Мороженое с клубничным джемом">
-<!-----------------------------кнопки переключения слайдера--------------->
+                        <!-----------------------------кнопки переключения слайдера--------------->
 
-<div class="top__slider-control-button">
-    <a class="top__slider-pagination-arrow" href="#">
-        <svg class="top__slider-pagination-arrow-next" width="16" height="16" viewBox="0 0 16 16"
-            fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M8.865 13.135a.665.665 0 0 0 .94-.94L5.604 7.994l4.201-4.202a.665.665 0 0 0-.94-.94L4.196 7.52l-.003.003a.664.664 0 0 0 0 .94l4.672 4.672Z"
-                fill="#FCFCFC" />
-        </svg>
-    </a>
-    <a class="top__slider-pagination-arrow" href="#">
-        <svg class="top__slider-pagination-arrow-back" width="16" height="16" viewBox="0 0 16 16"
-            fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M7.135 2.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.669.003-.002a.664.664 0 0 0 0-.94L7.135 2.864Z"
-                fill="#FCFCFC" />
-        </svg>
-    </a>
-</div>
+                        <div class="top__slider-control-button">
+                            <a class="top__slider-main-pagination arrow-back" href="#">
+                                <svg class="top__slider-arrow-back" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.865 13.135a.665.665 0 0 0 .94-.94L5.604 7.994l4.201-4.202a.665.665 0 0 0-.94-.94L4.196 7.52l-.003.003a.664.664 0 0 0 0 .94l4.672 4.672Z"
+                                        fill="#FCFCFC" />
+                                </svg>
+                            </a>
+                            <a class="top__slider-main-pagination arrow-next" href="#">
+                                <svg class="top__slider-arrow-next" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.135 2.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.669.003-.002a.664.664 0 0 0 0-.94L7.135 2.864Z"
+                                        fill="#FCFCFC" />
+                                </svg>
+                            </a>
+                        </div>
 
 
-<!---------------------------------------------------------------------------------->
+                        <!---------------------------------------------------------------------------------->
                     </div>
 
                     <div class="top__slider-next-page">
-                        <img class="top__slider-next-image" src="images/slider/page1/slide-next-1.png" alt="">
-                        <img class="top__slider-next-image" src="images/slider/page1/slide-next-2.png" alt="">
+                        <img class="top__slider-next-image" src="images/slider/page1/slide-next-1.png"
+                            alt="следующая картинка ">
+                        <img class="top__slider-next-image" src="images/slider/page1/slide-next-2.png"
+                            alt="следующая картинка">
 
                     </div>
                 </div>
@@ -299,42 +296,42 @@
                     </div>
                 </div>
 
-<div class="slider__after">
-                <ol class="top__slider-pagination">
-                    <li class="top__slider-pagination-item">
-                        <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                            <span class="visually-hidden">1 слайд</span>
-                        </button>
-                    </li>
-                    <li class="top__slider-pagination-item">
-                        <button class="slider-pagination-button" type="button">
-                            <span class="visually-hidden">2 слайд</span>
-                        </button>
-                    </li>
-                    <li class="top__slider-pagination-item"><button class="slider-pagination-button" type="button">
-                            <span class="visually-hidden">3 слайд</span>
-                        </button></li>
-                </ol>
+                <div class="slider__after">
+                    <ol class="top__slider-pagination">
+                        <li class="top__slider-pagination-item">
+                            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                                <span class="visually-hidden">1 слайд</span>
+                            </button>
+                        </li>
+                        <li class="top__slider-pagination-item">
+                            <button class="slider-pagination-button" type="button">
+                                <span class="visually-hidden">2 слайд</span>
+                            </button>
+                        </li>
+                        <li class="top__slider-pagination-item"><button class="slider-pagination-button" type="button">
+                                <span class="visually-hidden">3 слайд</span>
+                            </button></li>
+                    </ol>
 
 
-            
 
 
-                <ul class="social-links for-slider">
-                    <li class="social-link"><a href="https://t.me/htmlacademy">
-                            <img src="images/logo-telegram.png" alt="телеграмм">
-                        </a>
-                    </li>
-                    <li class="social-link"><a href="https://vk.com/htmlacademy">
-                            <img src="images/logo-vk.png" alt="вконтакте">
-                        </a>
-                    </li>
-                    <li class="social-link"> <a href="https://www.youtube.com/user/htmlacademyru">
-                            <img src="images/logo-youtube.png" alt="ютьюб">
-                        </a>
-                    </li>
-                </ul>
-            </div>
+
+                    <ul class="social-links for-slider">
+                        <li class="social-link"><a href="https://t.me/htmlacademy">
+                                <img src="images/logo-telegram.png" alt="телеграмм">
+                            </a>
+                        </li>
+                        <li class="social-link"><a href="https://vk.com/htmlacademy">
+                                <img src="images/logo-vk.png" alt="вконтакте">
+                            </a>
+                        </li>
+                        <li class="social-link"> <a href="https://www.youtube.com/user/htmlacademyru">
+                                <img src="images/logo-youtube.png" alt="ютьюб">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
 
@@ -377,8 +374,8 @@
 
 
                 <ul class="cards__list">
-                    <li class="cards__list-item"><img class="cards__img"
-                            src="images/content/bestseller1.jpg" width="168" height="168" alt="Вкус Малина">
+                    <li class="cards__list-item"><img class="cards__img" src="images/content/bestseller1.jpg"
+                            width="168" height="168" alt="Вкус Малина">
                         <h4>Малинка</h4>
                         <p class="cards__info">Сливочное мороженое с малиновым джемом</p>
                         <div class="cards__price-inner"><b class="price">310 ₽/кг</b>
@@ -387,24 +384,24 @@
                     </li>
 
 
-                    <li class="cards__list-item"><img class="cards__img"
-                            src="images/content/bestseller2.jpg" width="168" height="168" alt="Вкус фисташка">
+                    <li class="cards__list-item"><img class="cards__img" src="images/content/bestseller2.jpg"
+                            width="168" height="168" alt="Вкус фисташка">
                         <h4>Фисташка</h4>
                         <p class="cards__info">Фисташковый пломбир с кусочками шоколада</p>
                         <div class="cards__price-inner"><b class="price">340 ₽/кг</b>
                             <button class="busket"></button>
                         </div>
                     </li>
-                    <li class="cards__list-item"><img class="cards__img"
-                            src="images/content/bestseller3.jpg" width="168" height="168" alt="Вкус черника">
+                    <li class="cards__list-item"><img class="cards__img" src="images/content/bestseller3.jpg"
+                            width="168" height="168" alt="Вкус черника">
                         <h4>Черника</h4>
                         <p class="cards__info">Крем-брюле с черничным джемом</p>
                         <div class="cards__price-inner"><b class="price">330 ₽/кг</b>
                             <button class="busket"></button>
                         </div>
                     </li>
-                    <li class="cards__list-item"><img class="cards__img"
-                            src="images/content/bestseller4.jpg" width="168" height="168" alt="Вкус Жвачки">
+                    <li class="cards__list-item"><img class="cards__img" src="images/content/bestseller4.jpg"
+                            width="168" height="168" alt="Вкус Жвачки">
                         <h4>Бабл_гам</h4>
                         <p class="cards__info">Ванильный пломбир со сладкой посыпкой</p>
                         <div class="cards__price-inner"><b class="price">320 ₽/кг</b>
