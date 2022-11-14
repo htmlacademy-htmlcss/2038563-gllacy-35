@@ -121,9 +121,11 @@ body {
 .right-list .list-item:nth-child(2) {
     padding: 8px;
 }
+
 .navigation-icon {
     margin-right: 6px;
 }
+
 .link-phone {
     font-weight: 700;
     font-size: 16px;
@@ -132,13 +134,13 @@ body {
     color: inherit;
 }
 
-.navigation-icon.search-logo{
+.navigation-icon.search-logo {
     margin: 0 6px;
 }
 
 
 .left-list .list-item:hover {
-   
+
     padding-top: 6px;
     padding-bottom: 6px;
     background-color: rgba(252, 252, 252, 0.5);
@@ -152,6 +154,7 @@ body {
     border-radius: 30px;
     padding: 8px 0;
 }
+
 .left-list .list-item:active {
     background-color: rgba(252, 252, 252, 1);
     padding: 8px 0;
@@ -161,7 +164,7 @@ body {
 .right-list .list-item:hover {
     background-color: rgba(252, 252, 252, 0.5);
     border-radius: 30px;
- 
+
 }
 
 .right-list .list-item:focus {
@@ -169,12 +172,12 @@ body {
     background-color: rgba(252, 252, 252, 0.5);
     border-radius: 30px;
     outline: 2px solid #2D3440;
- 
+
 }
 
 .right-list .list-item:active {
     background-color: rgba(252, 252, 252, 1);
-   border-radius: 30px;
+    border-radius: 30px;
 }
 
 
@@ -182,6 +185,7 @@ body {
 .top__slider-1 {
     display: flex;
 }
+
 .top__slider-info {
     box-sizing: border-box;
     width: 540px;
@@ -192,8 +196,8 @@ body {
     font-weight: 900;
     font-size: 36px;
     line-height: 46px;
-   margin: 0;
-   padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -221,11 +225,12 @@ body {
 .top__slider-btn {
     margin-top: 48px;
 }
+
 /*------slide-2-----------*/
 
 .top__slider-2 {
     display: flex;
-display: none;
+    display: none;
 }
 
 .top__slider-images.slide-2 {
@@ -233,7 +238,7 @@ display: none;
 }
 
 .top__slider-3 {
-  
+
     display: flex;
     display: none;
 }
@@ -262,9 +267,10 @@ display: none;
 
 
 /*_________________________ПАГИНАЦИЯ на мороженкке СЛАЙДЕР__________________*/
-.slider{
+.slider {
     position: relative;
 }
+
 .top__slider-control-button {
     width: 348px;
     position: absolute;
@@ -376,8 +382,8 @@ display: none;
 .top__slider-pagination {
     list-style-type: none;
     display: flex;
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -412,7 +418,8 @@ padding: 0;
     width: 104px;
     cursor: pointer;
 }
-.social-link img{
+
+.social-link img {
     margin: 0;
     padding: 0;
     width: 28px;
@@ -422,19 +429,21 @@ padding: 0;
     outline: 2px solid rgba(252, 252, 252, 0.4);
 }
 
-.social-link img:hover{
+.social-link img:hover {
     background-color: #2D3440;
-    
+
 
 }
+
 .social-link img:focus {
     color: rgba(252, 252, 252, 0.4);
     background-color: rgba(45, 52, 64, 0.4);
     outline: 2px solid rgba(252, 252, 252, 0.5);
 }
+
 .social-link img:active {
-   background-color: #2D3440;
-   outline: 2px solid rgba(252, 252, 252, 0.5);
+    background-color: #2D3440;
+    outline: 2px solid rgba(252, 252, 252, 0.5);
 }
 
 .slider__after {
@@ -462,7 +471,8 @@ padding: 0;
     padding-bottom: 55px;
 
 }
-.gifts-title{
+
+.gifts-title {
     width: 434px;
 }
 
@@ -1218,7 +1228,7 @@ padding: 0;
 .range-toggle:active {
     background: #2D3440;
     outline: 6px solid #2D3440;
-    
+
 }
 
 .range-toggle:focus {
