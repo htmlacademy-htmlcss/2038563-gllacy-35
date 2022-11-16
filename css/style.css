@@ -2,7 +2,7 @@
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/inter-700.woff2") format("woff2");
+    src: url("../fonts/inter-700.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -10,7 +10,7 @@
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/inter-400.woff2") format("woff2");
+    src: url("../fonts/inter-400.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -18,7 +18,7 @@
     font-family: "Inter";
     font-weight: 900;
     font-style: normal;
-    src: url("fonts/inter-900.woff2") format("woff2");
+    src: url("../fonts/inter-900.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -66,12 +66,14 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 24px 0;
 
 }
 
 .navigation-list {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     font-weight: 400;
     font-size: 16px;
@@ -96,7 +98,6 @@ body {
 
 .left-list .menu-link {
     padding: 8px 16px;
-
 }
 
 .navigation__arrow-down {
@@ -297,13 +298,15 @@ body {
 
 .top__slider-main-pagination:hover {
     background-color: rgba(252, 252, 252, 1);
-    background-repeat: no-repeat;
+  
     border: 2px solid rgba(252, 252, 252, 1);
 }
 
 .top__slider-main-pagination:active {
     background-color: rgba(252, 252, 252, 0.5);
+   
     border: 2px solid rgba(252, 252, 252, 0.5);
+
 }
 
 
@@ -318,6 +321,7 @@ body {
 .top__slider-main-pagination.arrow-next:focus {
     background-image: url(../images/arrow-next-black.svg);
     background-position: right 8px center;
+    background-repeat: no-repeat;
 }
 
 .top__slider-main-pagination.arrow-back:hover,
@@ -325,6 +329,7 @@ body {
 .top__slider-main-pagination.arrow-back:focus {
     background-image: url(../images/arrow-prew-black.svg);
     background-position: left 8px center;
+    background-repeat: no-repeat;
 }
 
 
@@ -335,8 +340,7 @@ body {
     text-align: center;
     background-color: #FCFCFC;
     color: #2D3440;
-    border: 2px solid rgba(242, 180, 197, 0.4);
-    outline: 2px solid rgba(242, 180, 197, 0.4);
+    outline: 4px solid rgba(242, 180, 197, 0.4);
     border-radius: 26px;
     font-weight: 700;
     font-size: 16px;
@@ -1274,6 +1278,12 @@ body {
 
 .control-input[type="radio"]+.control-mark {
     border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #2D3440;
+
 }
 
 .control-label {
@@ -1283,13 +1293,13 @@ body {
     margin-left: 26px;
 }
 
-.control-input[type="radio"]:checked+.control-mark::before {
+.control-input[type="radio"]:checked + .control-mark::before {
     position: absolute;
     top: 4px;
     left: 4px;
     width: 8px;
     height: 8px;
-    background-color: #FCFCFC;
+    background-color: #2D3440;
     border-radius: 50%;
     content: "";
 }
@@ -1315,15 +1325,13 @@ body {
     margin-right: 0;
 }
 
-.control-mark {
+.control-input[type="checkbox"]+.control-mark{
     position: absolute;
-    top: 2px;
     width: 16px;
     height: 16px;
-    border: 2px solid #2D3440;
-    border-radius: 4px;
+  background-image: url(../images/catalog/filter/square-check.svg);
+  background-repeat: no-repeat; 
 }
-
 .control:hover .control-mark {
     border-color: #FCFCFC;
 }
@@ -1502,7 +1510,7 @@ body {
 }
 
 
-/*-------popover----*/
+/*-------popover КОРЗИНА----*/
 
 
 .popover {
@@ -1515,28 +1523,20 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
+    padding: 48px;
     min-height: 158px;
     color: #2D3440;
     background-color: #FCFCFC;
     border-radius: 8px;
     box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
-    display: none;
+ display: none;
 }
 
 .popover__open {
     display: block;
 }
 
-.popover__content {
-    padding: 48px;
-}
 
-.popover__close-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-
-}
 
 .popover__cart .popover__close-button {
     padding-left: 54px;
@@ -1570,10 +1570,12 @@ body {
 
 .cart-item {
     display: grid;
-    grid-template-columns: 46px 120px 70px 20px;
+    width: 345px;
+    grid-template-columns: 46px 1fr 70px 18px;
     grid-template-rows: 1fr 1fr;
     margin-bottom: 24px;
     gap: 2px 16px;
+    align-items: flex-start;
 }
 
 .cart-img {
@@ -1582,7 +1584,6 @@ body {
 }
 
 .cart-item-title {
-
     grid-row: 1/2;
     margin: 0;
     padding: 0;
@@ -1602,6 +1603,7 @@ body {
 
 .cart-price {
     grid-row: 1/3;
+    margin-top: 12px;
 
 }
 
@@ -1609,23 +1611,27 @@ body {
     grid-row: 1/3;
     border: none;
     background-color: transparent;
+    margin-top: 12px;
+    padding: 0;
+   
 }
 
 .cart-item+.cart-item {
     margin-top: 24px;
 
 }
+.cart-item:last-child{
+    margin-bottom: 64px;
+}
 
 .popover-sum {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 64px;
-
+    justify-content: space-between;
+    margin-top: 30px;
+    position: relative;
 }
 
-.cart-sum {
-    margin-left: 32px;
-}
+
 
 .popover-sum::before {
     position: absolute;
@@ -1634,7 +1640,7 @@ body {
     height: 1px;
     background-color: rgba(231, 231, 231, 1);
     content: "";
-    bottom: 124px;
+    top:-24px;
 }
 
 /*-----------модальное окно ФИО------*/
