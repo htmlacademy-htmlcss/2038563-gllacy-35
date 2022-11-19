@@ -945,26 +945,25 @@ body {
 }
 
 .tooltype-text {
-
+    display: none;
     position: absolute;
     width: 169px;
+    font-weight: 400;
     font-size: 12px;
     line-height: 16px;
+    color: #565C66;
     padding: 10px 8px 15px;
     border: 1px solid #B9B9B9;
     background-color: #fff;
     border-radius: 4px;
     margin-left: 72px;
     z-index: 1;
-    visibility: hidden;
-}
 
+}
 
 .tooltype-adress:hover+.tooltype-text {
-    visibility: visible;
-
+    display: block;
 }
-
 
 
 .form {
@@ -1306,7 +1305,7 @@ body {
     position: absolute;
     height: 2px;
     background-color: rgba(86, 92, 102, 1);
-    
+
 }
 
 .range-bar-line {
@@ -1326,7 +1325,10 @@ body {
     height: 16px;
     margin: 0;
     padding: 0;
-    background: #2D3440;
+    background-color: #2D3440;
+    background-image: url(../images/catalog/filter/point-white-toogle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 50%;
     border: none;
     cursor: pointer;
@@ -1346,24 +1348,17 @@ body {
 .circle-core {
     width: 4px;
     height: 4px;
-    z-index: 1;
+
     fill: #FCFCFC;
     margin-bottom: 3px;
 }
 
-.circle-core::before {
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: none;
-    fill: #b917ab;
-    content: "";
-
-}
 
 .range-toggle:hover {
-    background: #FCFCFC;
+    background-color: #FCFCFC;
+    background-image: url(../images/catalog/filter/point-black-toogle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
@@ -1374,6 +1369,9 @@ body {
 .range-toggle:focus {
     background-color: #FCFCFC;
     outline: 2px solid rgba(45, 52, 64, 1);
+    background-image: url(../images/catalog/filter/point-black-toogle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
@@ -1636,9 +1634,9 @@ body {
     outline: 2px solid #2D3440;
 }
 
-.catalog-page:disabled {
+.catalog-page.disabled {
     background-color: rgba(252, 252, 252, 1);
-
+    outline: 2px solid #FCFCFC;
 }
 
 .catalog__number-pagination {
